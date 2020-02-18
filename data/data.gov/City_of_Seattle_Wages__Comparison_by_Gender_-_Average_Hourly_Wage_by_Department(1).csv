@@ -1,0 +1,298 @@
+DEPARTMENT,AGE RANGE,Female Avg Hrly Rate,No. Female Empl,Male Avg Hrly Rate,No. Male Empl,Total Avg Hrly Rate,Total No. Empl,Female to male % rate,Female to male % count,Notes
+Arts and Cultural Affairs,26 - 30,,,29.04,1,29.04,1,,,no women in age range
+Arts and Cultural Affairs,31 - 35,32.47,3,32.25,2,32.38,5,100.7,150,
+Arts and Cultural Affairs,36 - 40,30.44,2,51.95,1,37.61,3,58.59,200,
+Arts and Cultural Affairs,41 - 45,30.28,4,24.99,2,28.51,6,121.15,200,
+Arts and Cultural Affairs,46 - 50,33.81,2,28.77,2,31.29,4,117.54,100,
+Arts and Cultural Affairs,51 - 55,40.49,2,,,40.49,2,,,no men in age range
+Arts and Cultural Affairs,56 - 60,37.84,3,,,37.84,3,,,no men in age range
+Arts and Cultural Affairs,61 - 65,37.23,3,,,37.23,3,,,no men in age range
+Arts and Cultural Affairs,66 - 70,52.61,1,,,52.61,1,,,no men in age range
+Arts and Cultural Affairs Total,,35.29,20,31.62,8,34.24,28,111.6,250,
+City Auditor,26 - 30,30.55,1,,,30.55,1,,,no men in age range
+City Auditor,41 - 45,51.17,1,,,51.17,1,,,no men in age range
+City Auditor,46 - 50,51.13,1,,,51.13,1,,,no men in age range
+City Auditor,51 - 55,50.6,2,,,50.6,2,,,no men in age range
+City Auditor,56 - 60,51.81,1,56.39,2,54.86,3,91.88,50,
+City Auditor,61 - 65,55.75,2,,,55.75,2,,,no men in age range
+City Auditor Total,,49.67,8,56.39,2,51.01,10,88.08,400,
+City Budget Office,26 - 30,,,41.67,1,41.67,1,,,no women in age range
+City Budget Office,31 - 35,42.66,5,49.55,3,45.24,8,86.11,166.67,
+City Budget Office,36 - 40,52.83,2,42.05,1,49.24,3,125.64,200,
+City Budget Office,41 - 45,48.71,4,51.25,1,49.21,5,95.04,400,
+City Budget Office,46 - 50,40.21,2,45.33,1,41.91,3,88.7,200,
+City Budget Office,51 - 55,45.97,3,47.04,2,46.4,5,97.73,150,
+City Budget Office,56 - 60,51.22,1,56.51,1,53.86,2,90.63,100,
+City Budget Office Total,,46.08,17,47.95,10,46.77,27,96.09,170,
+City Employees Retirement Syst,26 - 30,,,40.29,1,40.29,1,,,no women in age range
+City Employees Retirement Syst,31 - 35,30.92,1,,,30.92,1,,,no men in age range
+City Employees Retirement Syst,36 - 40,23.38,1,22.56,1,22.97,2,103.63,100,
+City Employees Retirement Syst,41 - 45,34.03,2,25.28,1,31.11,3,134.61,200,
+City Employees Retirement Syst,46 - 50,23.44,2,52.19,1,33.02,3,44.9,200,
+City Employees Retirement Syst,51 - 55,55.3,3,,,55.3,3,,,no men in age range
+City Employees Retirement Syst,56 - 60,23.47,3,,,23.47,3,,,no men in age range
+City Employees Retirement Syst Total,,33.79,12,35.08,4,34.12,16,96.33,300,
+City Light,20 - 25,,,29.4,17,29.4,17,,,no women in age range
+City Light,26 - 30,34.52,10,34.49,53,34.49,63,100.1,18.87,
+City Light,31 - 35,33.35,39,38.5,99,37.04,138,86.63,39.39,
+City Light,36 - 40,36.81,35,40.04,116,39.29,151,91.92,30.17,
+City Light,41 - 45,37.15,59,40.59,127,39.5,186,91.52,46.46,
+City Light,46 - 50,38.4,83,41.82,156,40.64,239,91.82,53.21,
+City Light,51 - 55,37.68,108,42.7,223,41.06,331,88.25,48.43,
+City Light,56 - 60,35.65,94,42.93,223,40.77,317,83.04,42.15,
+City Light,61 - 65,36.43,73,42.08,125,40,198,86.56,58.4,
+City Light,66 - 70,32.24,18,42.7,27,38.51,45,75.51,66.67,
+City Light,over 70,37.2,3,40.05,8,39.27,11,92.88,37.5,
+City Light Total,,36.56,522,41.13,1174,39.73,1696,88.88,44.46,
+Civil Service Commissions,36 - 40,5.53,1,,,5.53,1,,,no men in age range
+Civil Service Commissions,41 - 45,,,5.53,2,5.53,2,,,no women in age range
+Civil Service Commissions,46 - 50,41.71,2,5.53,1,29.65,3,754.16,200,
+Civil Service Commissions,51 - 55,,,5.53,1,5.53,1,,,no women in age range
+Civil Service Commissions,66 - 70,,,5.53,1,5.53,1,,,no women in age range
+Civil Service Commissions Total,,29.65,3,5.53,5,14.57,8,536.11,60,
+Department of Planning & Dev,26 - 30,33.88,4,,,33.88,4,,,no men in age range
+Department of Planning & Dev,31 - 35,33.32,16,41.63,10,36.52,26,80.03,160,
+Department of Planning & Dev,36 - 40,37.61,23,42.13,8,38.77,31,89.26,287.5,
+Department of Planning & Dev,41 - 45,38.54,21,40.17,10,39.07,31,95.95,210,
+Department of Planning & Dev,46 - 50,40.65,20,41.68,28,41.25,48,97.53,71.43,
+Department of Planning & Dev,51 - 55,37.9,23,40.2,32,39.24,55,94.3,71.88,
+Department of Planning & Dev,56 - 60,40.23,30,43.41,46,42.16,76,92.66,65.22,
+Department of Planning & Dev,61 - 65,31.7,9,44.17,32,41.43,41,71.78,28.13,
+Department of Planning & Dev,66 - 70,45.16,3,44.98,10,45.02,13,100.4,30,
+Department of Planning & Dev,over 70,,,42.79,3,42.79,3,,,no women in age range
+Department of Planning & Dev Total,,37.96,149,42.44,179,40.4,328,89.43,83.24,
+Dept of Finance & Admn Svc,20 - 25,22,1,22.77,1,22.38,2,96.62,100,
+Dept of Finance & Admn Svc,26 - 30,31.85,11,26.83,13,29.13,24,118.7,84.62,
+Dept of Finance & Admn Svc,31 - 35,31.17,13,33.55,26,32.76,39,92.91,50,
+Dept of Finance & Admn Svc,36 - 40,32.74,37,32.07,25,32.47,62,102.09,148,
+Dept of Finance & Admn Svc,41 - 45,34.2,28,37.93,33,36.22,61,90.15,84.85,
+Dept of Finance & Admn Svc,46 - 50,35.08,33,36.07,45,35.65,78,97.26,73.33,
+Dept of Finance & Admn Svc,51 - 55,38.45,44,34.86,52,36.51,96,110.3,84.62,
+Dept of Finance & Admn Svc,56 - 60,37.34,40,35.76,44,36.51,84,104.42,90.91,
+Dept of Finance & Admn Svc,61 - 65,33.25,18,39.05,33,37,51,85.14,54.55,
+Dept of Finance & Admn Svc,66 - 70,36.69,5,28.08,3,33.46,8,130.68,166.67,
+Dept of Finance & Admn Svc,over 70,,,31.02,1,31.02,1,,,no women in age range
+Dept of Finance & Admn Svc,under 20,,,13.43,1,13.43,1,,,no women in age range
+Dept of Finance & Admn Svc Total,,35.09,230,35.11,277,35.1,507,99.97,83.03,
+Ethics And Elections,36 - 40,,,24.35,1,24.35,1,,,no women in age range
+Ethics And Elections,41 - 45,,,67.42,1,67.42,1,,,no women in age range
+Ethics And Elections,46 - 50,39.98,1,48.35,1,44.16,2,82.69,100,
+Ethics And Elections,51 - 55,46.27,1,,,46.27,1,,,no men in age range
+Ethics And Elections,61 - 65,48.37,1,48.37,1,48.37,2,100,100,
+Ethics And Elections Total,,44.87,3,47.12,4,46.16,7,95.23,75,
+Fire Department,20 - 25,,,29.64,2,29.64,2,,,no women in age range
+Fire Department,26 - 30,28.83,1,31.44,44,31.39,45,91.69,2.27,
+Fire Department,31 - 35,29.75,7,34.56,62,34.07,69,86.08,11.29,
+Fire Department,36 - 40,31.96,11,37.21,161,36.87,172,85.9,6.83,
+Fire Department,41 - 45,37.27,20,38.85,203,38.71,223,95.92,9.85,
+Fire Department,46 - 50,39.62,36,40.94,194,40.73,230,96.77,18.56,
+Fire Department,51 - 55,41.21,38,43.39,124,42.88,162,94.99,30.65,
+Fire Department,56 - 60,36.28,18,46.11,93,44.52,111,78.68,19.35,
+Fire Department,61 - 65,32.57,3,47.58,48,46.7,51,68.45,6.25,
+Fire Department,66 - 70,,,46.33,6,46.33,6,,,no women in age range
+Fire Department,over 70,26.79,1,,,26.79,1,,,no men in age range
+Fire Department Total,,37.81,135,40.17,937,39.87,1072,94.13,14.41,
+Hearing Examiner,36 - 40,23.66,2,,,23.66,2,,,no men in age range
+Hearing Examiner,46 - 50,36.3,1,,,36.3,1,,,no men in age range
+Hearing Examiner,56 - 60,59.89,1,,,59.89,1,,,no men in age range
+Hearing Examiner,61 - 65,72.07,1,,,72.07,1,,,no men in age range
+Hearing Examiner Total,,43.11,5,,,43.11,5,,,no men in age range
+Housing,26 - 30,38.48,1,,,38.48,1,,,no men in age range
+Housing,31 - 35,40.59,2,,,40.59,2,,,no men in age range
+Housing,36 - 40,39.62,3,39.22,2,39.46,5,101,150,
+Housing,41 - 45,32.55,3,33.12,3,32.83,6,98.28,100,
+Housing,46 - 50,45.48,3,43.1,1,44.88,4,105.52,300,
+Housing,51 - 55,35.15,2,44.52,2,39.84,4,78.96,100,
+Housing,56 - 60,33.51,3,37.57,4,35.83,7,89.21,75,
+Housing,61 - 65,29.43,2,41.27,5,37.88,7,71.32,40,
+Housing,66 - 70,24.35,1,,,24.35,1,,,no men in age range
+Housing Total,,36.33,20,39.21,17,37.65,37,92.67,117.65,
+Human Services,20 - 25,22,3,,,22,3,,,no men in age range
+Human Services,26 - 30,26.28,12,30.96,2,26.94,14,84.86,600,
+Human Services,31 - 35,29.12,24,27.22,2,28.97,26,106.98,1200,
+Human Services,36 - 40,32.3,38,31.18,14,32,52,103.58,271.43,
+Human Services,41 - 45,32.89,31,34.45,12,33.33,43,95.48,258.33,
+Human Services,46 - 50,30.25,36,36.72,7,31.3,43,82.39,514.29,
+Human Services,51 - 55,34.24,37,36.81,8,34.69,45,93,462.5,
+Human Services,56 - 60,32.38,34,31.36,11,32.13,45,103.26,309.09,
+Human Services,61 - 65,31.71,25,34.98,8,32.5,33,90.66,312.5,
+Human Services,66 - 70,30.51,9,33.69,1,30.83,10,90.57,900,
+Human Services Total,,31.53,249,33.48,65,31.94,314,94.17,383.08,
+Immigrant & Refugee Affairs,26 - 30,34.94,1,,,34.94,1,,,no men in age range
+Immigrant & Refugee Affairs,36 - 40,,,27.25,1,27.25,1,,,no women in age range
+Immigrant & Refugee Affairs,66 - 70,,,47.49,1,47.49,1,,,no women in age range
+Immigrant & Refugee Affairs Total,,34.94,1,37.37,2,36.56,3,93.48,50,
+Information Technology Dept,20 - 25,,,37.15,2,37.15,2,,,no women in age range
+Information Technology Dept,26 - 30,37.96,3,,,37.96,3,,,no men in age range
+Information Technology Dept,31 - 35,37.23,2,42.7,11,41.86,13,87.2,18.18,
+Information Technology Dept,36 - 40,43.31,4,42.7,15,42.83,19,101.44,26.67,
+Information Technology Dept,41 - 45,37.47,9,43.78,21,41.89,30,85.58,42.86,
+Information Technology Dept,46 - 50,41.75,17,47.64,16,44.6,33,87.64,106.25,
+Information Technology Dept,51 - 55,43.21,11,48.04,20,46.33,31,89.93,55,
+Information Technology Dept,56 - 60,48.75,14,44.08,18,46.12,32,110.59,77.78,
+Information Technology Dept,61 - 65,48.86,6,45.01,12,46.29,18,108.55,50,
+Information Technology Dept,66 - 70,,,51.95,6,51.95,6,,,no women in age range
+Information Technology Dept Total,,43.32,66,45.22,121,44.55,187,95.8,54.55,
+Intergovernmental Relations,26 - 30,39.58,1,,,39.58,1,,,no men in age range
+Intergovernmental Relations,31 - 35,52.68,1,,,52.68,1,,,no men in age range
+Intergovernmental Relations,36 - 40,38.31,1,62.95,1,50.63,2,60.86,100,
+Intergovernmental Relations,41 - 45,50.47,1,40.19,4,42.25,5,125.57,25,
+Intergovernmental Relations,61 - 65,,,54.24,1,54.24,1,,,no women in age range
+Intergovernmental Relations Total,,45.26,4,46.33,6,45.9,10,97.7,66.67,
+Law Department,20 - 25,20.96,1,,,20.96,1,,,no men in age range
+Law Department,26 - 30,27.31,10,31.41,1,27.68,11,86.95,1000,
+Law Department,31 - 35,32.8,9,37.71,5,34.55,14,86.97,180,
+Law Department,36 - 40,38.27,16,41.46,5,39.03,21,92.3,320,
+Law Department,41 - 45,40.32,21,44.35,9,41.53,30,90.92,233.33,
+Law Department,46 - 50,34.54,13,41.01,2,35.4,15,84.22,650,
+Law Department,51 - 55,36.5,16,49.56,13,42.35,29,73.64,123.08,
+Law Department,56 - 60,39.66,12,52.04,9,44.97,21,76.21,133.33,
+Law Department,61 - 65,41.12,10,59.29,3,45.31,13,69.35,333.33,
+Law Department,66 - 70,24.35,1,52.39,3,45.38,4,46.48,33.33,
+Law Department,over 70,,,59.47,1,59.47,1,,,no women in age range
+Law Department Total,,36.63,109,47.37,51,40.05,160,77.34,213.73,
+Legislative-City Council,20 - 25,26.9,1,,,26.9,1,,,no men in age range
+Legislative-City Council,26 - 30,34.49,1,32.37,4,32.79,5,106.56,25,
+Legislative-City Council,31 - 35,34.91,5,33.57,5,34.24,10,103.99,100,
+Legislative-City Council,36 - 40,34.82,6,34.12,1,34.72,7,102.04,600,
+Legislative-City Council,41 - 45,33.6,10,51.81,5,39.67,15,64.86,200,
+Legislative-City Council,46 - 50,31.4,6,38.6,6,35,12,81.35,100,
+Legislative-City Council,51 - 55,42.36,5,42.09,5,42.22,10,100.63,100,
+Legislative-City Council,56 - 60,44.56,8,43.98,3,44.41,11,101.32,266.67,
+Legislative-City Council,61 - 65,34.53,3,46.11,8,42.95,11,74.9,37.5,
+Legislative-City Council,66 - 70,,,31.29,2,31.29,2,,,no women in age range
+Legislative-City Council,over 70,57.46,1,5.11,1,31.29,2,1124.46,100,
+Legislative-City Council Total,,36.93,46,40.03,40,38.37,86,92.26,115,
+Mayor's Office,20 - 25,22.73,2,22.74,2,22.73,4,99.93,100,
+Mayor's Office,26 - 30,32.62,5,34.12,1,32.87,6,95.61,500,
+Mayor's Office,31 - 35,34.4,3,28.6,3,31.5,6,120.28,100,
+Mayor's Office,36 - 40,35.96,2,,,35.96,2,,,no men in age range
+Mayor's Office,41 - 45,51.88,5,52.95,2,52.18,7,97.96,250,
+Mayor's Office,46 - 50,20.19,2,61.84,2,41.01,4,32.64,100,
+Mayor's Office,51 - 55,41.19,1,86.11,1,63.65,2,47.83,100,
+Mayor's Office,61 - 65,37.77,1,58.95,1,48.36,2,64.08,100,
+Mayor's Office Total,,36.3,21,45,12,39.47,33,80.67,175,
+Municipal Court,26 - 30,23.96,6,32.34,4,27.31,10,74.1,150,
+Municipal Court,31 - 35,31.16,9,33.87,9,32.52,18,92,100,
+Municipal Court,36 - 40,31.43,12,35.28,8,32.97,20,89.08,150,
+Municipal Court,41 - 45,27.87,18,37.22,9,30.99,27,74.87,200,
+Municipal Court,46 - 50,29.75,19,47.14,8,34.91,27,63.11,237.5,
+Municipal Court,51 - 55,31.48,24,39.7,11,34.07,35,79.29,218.18,
+Municipal Court,56 - 60,26.71,23,41.12,7,30.07,30,64.96,328.57,
+Municipal Court,61 - 65,33.43,22,40.18,9,35.39,31,83.2,244.44,
+Municipal Court,66 - 70,34.99,1,38.24,4,37.59,5,91.51,25,
+Municipal Court,over 70,,,31.49,1,31.49,1,,,no women in age range
+Municipal Court Total,,29.92,134,38.56,70,32.88,204,77.58,191.43,
+Neighborhoods Department,20 - 25,,,21.77,1,21.77,1,,,no women in age range
+Neighborhoods Department,26 - 30,44.52,1,42.05,1,43.29,2,105.87,100,
+Neighborhoods Department,31 - 35,33.67,3,,,33.67,3,,,no men in age range
+Neighborhoods Department,36 - 40,39.13,7,44.19,1,39.76,8,88.55,700,
+Neighborhoods Department,41 - 45,35.38,7,,,35.38,7,,,no men in age range
+Neighborhoods Department,46 - 50,38.83,6,35.05,2,37.88,8,110.8,300,
+Neighborhoods Department,51 - 55,34.55,12,28.35,1,34.08,13,121.88,1200,
+Neighborhoods Department,56 - 60,41.78,8,41.42,6,41.62,14,100.86,133.33,
+Neighborhoods Department,61 - 65,48.47,3,37.7,2,44.16,5,128.58,150,
+Neighborhoods Department,66 - 70,,,40.4,2,40.4,2,,,no women in age range
+Neighborhoods Department Total,,38.18,47,38.2,16,38.18,63,99.95,293.75,
+Office for Civil Rights,26 - 30,29.44,2,,,29.44,2,,,no men in age range
+Office for Civil Rights,31 - 35,32.95,2,,,32.95,2,,,no men in age range
+Office for Civil Rights,36 - 40,37,2,38.32,1,37.44,3,96.55,200,
+Office for Civil Rights,41 - 45,39.79,3,36.3,1,38.92,4,109.61,300,
+Office for Civil Rights,46 - 50,22.56,1,34.08,4,31.77,5,66.2,25,
+Office for Civil Rights,51 - 55,41.3,3,,,41.3,3,,,no men in age range
+Office for Civil Rights,56 - 60,30.13,2,38.48,1,32.91,3,78.3,200,
+Office for Civil Rights,61 - 65,,,36.3,1,36.3,1,,,no women in age range
+Office for Civil Rights Total,,34.99,15,35.71,8,35.24,23,97.97,187.5,
+Office of Economic Development,20 - 25,,,27.25,1,27.25,1,,,no women in age range
+Office of Economic Development,26 - 30,,,40.71,1,40.71,1,,,no women in age range
+Office of Economic Development,31 - 35,41.55,1,47.37,1,44.46,2,87.72,100,
+Office of Economic Development,36 - 40,34.59,3,44.26,3,39.43,6,78.16,100,
+Office of Economic Development,41 - 45,47.4,3,49.46,2,48.22,5,95.84,150,
+Office of Economic Development,46 - 50,54.65,1,41.18,2,45.67,3,132.72,50,
+Office of Economic Development,51 - 55,33.95,2,50.56,2,42.25,4,67.14,100,
+Office of Economic Development,56 - 60,,,47.37,1,47.37,1,,,no women in age range
+Office of Economic Development Total,,41.01,10,44.45,13,42.95,23,92.25,76.92,
+Office of Sustainability & Env,26 - 30,,,38.48,1,38.48,1,,,no women in age range
+Office of Sustainability & Env,31 - 35,43.72,1,,,43.72,1,,,no men in age range
+Office of Sustainability & Env,36 - 40,48.79,3,49.72,1,49.02,4,98.12,300,
+Office of Sustainability & Env,41 - 45,44.9,4,,,44.9,4,,,no men in age range
+Office of Sustainability & Env,46 - 50,49.71,3,,,49.71,3,,,no men in age range
+Office of Sustainability & Env,51 - 55,,,43.08,1,43.08,1,,,no women in age range
+Office of Sustainability & Env,66 - 70,,,43.1,1,43.1,1,,,no women in age range
+Office of Sustainability & Env Total,,47.16,11,43.59,4,46.21,15,108.19,275,
+Parks Department,20 - 25,19.47,5,20.3,7,19.95,12,95.92,71.43,
+Parks Department,26 - 30,22.1,20,22.1,31,22.1,51,100.01,64.52,
+Parks Department,31 - 35,23.73,36,25.29,50,24.64,86,93.85,72,
+Parks Department,36 - 40,27.7,24,25.56,47,26.28,71,108.39,51.06,
+Parks Department,41 - 45,29,41,27.77,61,28.26,102,104.4,67.21,
+Parks Department,46 - 50,28.53,49,27.25,66,27.8,115,104.69,74.24,
+Parks Department,51 - 55,30.75,49,29.1,106,29.62,155,105.68,46.23,
+Parks Department,56 - 60,32.02,61,30.21,89,30.95,150,105.98,68.54,
+Parks Department,61 - 65,28.6,43,29.02,60,28.84,103,98.53,71.67,
+Parks Department,66 - 70,34.34,8,26.36,10,29.91,18,130.27,80,
+Parks Department,over 70,,,22.52,2,22.52,2,,,no women in age range
+Parks Department,under 20,15.76,1,,,15.76,1,,,no men in age range
+Parks Department Total,,28.56,337,27.62,529,27.98,866,103.43,63.71,
+Personnel Department,26 - 30,14.48,1,13.43,1,13.96,2,107.82,100,
+Personnel Department,31 - 35,26.07,5,36.97,2,29.19,7,70.53,250,
+Personnel Department,36 - 40,42.72,5,42.25,1,42.64,6,101.11,500,
+Personnel Department,41 - 45,36.71,8,54.63,1,38.7,9,67.19,800,
+Personnel Department,46 - 50,42.53,9,33.69,1,41.65,10,126.24,900,
+Personnel Department,51 - 55,36.36,15,59.08,3,40.15,18,61.55,500,
+Personnel Department,56 - 60,37.39,13,45.19,5,39.56,18,82.74,260,
+Personnel Department,61 - 65,34.88,8,55.01,3,40.37,11,63.41,266.67,
+Personnel Department,over 70,,,42.25,1,42.25,1,,,no women in age range
+Personnel Department Total,,36.65,64,46.02,18,38.71,82,79.63,355.56,
+Police Department,20 - 25,24.5,12,29.48,16,27.34,28,83.11,75,
+Police Department,26 - 30,31.11,47,35.66,101,34.22,148,87.24,46.53,
+Police Department,31 - 35,31.6,48,38.89,134,36.97,182,81.25,35.82,
+Police Department,36 - 40,35.2,57,39.83,146,38.53,203,88.37,39.04,
+Police Department,41 - 45,37.15,87,43.04,266,41.59,353,86.31,32.71,
+Police Department,46 - 50,37.37,82,45.91,252,43.81,334,81.39,32.54,
+Police Department,51 - 55,35.53,84,48.9,193,44.85,277,72.65,43.52,
+Police Department,56 - 60,35.74,55,47.55,128,44,183,75.15,42.97,
+Police Department,61 - 65,33.38,43,47.05,55,41.05,98,70.96,78.18,
+Police Department,66 - 70,26.78,13,47.21,17,38.35,30,56.72,76.47,
+Police Department,over 70,27.49,3,31.76,1,28.56,4,86.57,300,
+Police Department Total,,34.64,531,43.59,1309,41.01,1840,79.45,40.57,
+Police Pension System,41 - 45,45.96,1,,,45.96,1,,,no men in age range
+Police Pension System,46 - 50,45.96,1,,,45.96,1,,,no men in age range
+Police Pension System,66 - 70,,,61.42,1,61.42,1,,,no women in age range
+Police Pension System Total,,45.96,2,61.42,1,51.11,3,74.82,200,
+Seattle Center,20 - 25,,,17.6,2,17.6,2,,,no women in age range
+Seattle Center,26 - 30,22.75,2,18.93,2,20.84,4,120.15,100,
+Seattle Center,31 - 35,29.66,4,25.53,2,28.28,6,116.21,200,
+Seattle Center,36 - 40,27.61,8,36.36,7,31.7,15,75.94,114.29,
+Seattle Center,41 - 45,29.01,11,29.52,20,29.33,31,98.27,55,
+Seattle Center,46 - 50,33.19,22,27.7,23,30.38,45,119.82,95.65,
+Seattle Center,51 - 55,32.42,16,33.09,29,32.85,45,97.99,55.17,
+Seattle Center,56 - 60,28.23,11,29.28,28,28.98,39,96.42,39.29,
+Seattle Center,61 - 65,30.65,15,26.88,18,28.59,33,114.02,83.33,
+Seattle Center,66 - 70,30.28,2,22.14,8,23.76,10,136.77,25,
+Seattle Center,over 70,18.96,2,17.11,2,18.04,4,110.81,100,
+Seattle Center Total,,30.34,93,28.94,141,29.5,234,104.84,65.96,
+Seattle Dept of Transportation,20 - 25,23.38,1,19.8,8,20.2,9,118.07,12.5,
+Seattle Dept of Transportation,26 - 30,34.8,7,29.19,26,30.38,33,119.24,26.92,
+Seattle Dept of Transportation,31 - 35,33.95,22,32.89,37,33.29,59,103.22,59.46,
+Seattle Dept of Transportation,36 - 40,41.27,30,35.36,64,37.25,94,116.72,46.88,
+Seattle Dept of Transportation,41 - 45,37.92,24,37.2,70,37.38,94,101.93,34.29,
+Seattle Dept of Transportation,46 - 50,39.05,40,37.79,73,38.24,113,103.33,54.79,
+Seattle Dept of Transportation,51 - 55,40.14,41,40.34,67,40.26,108,99.52,61.19,
+Seattle Dept of Transportation,56 - 60,37.24,35,35.32,70,35.96,105,105.44,50,
+Seattle Dept of Transportation,61 - 65,38.19,20,36.93,32,37.42,52,103.41,62.5,
+Seattle Dept of Transportation,66 - 70,41.41,6,46.08,8,44.08,14,89.87,75,
+Seattle Dept of Transportation,over 70,,,28.68,2,28.68,2,,,no women in age range
+Seattle Dept of Transportation Total,,38.43,226,36.2,457,36.94,683,106.17,49.45,
+Seattle Public Utilities,20 - 25,,,24.77,4,24.77,4,,,no women in age range
+Seattle Public Utilities,26 - 30,32.21,16,27.99,36,29.29,52,115.08,44.44,
+Seattle Public Utilities,31 - 35,32.5,31,33.48,67,33.17,98,97.09,46.27,
+Seattle Public Utilities,36 - 40,34.03,41,36.31,94,35.61,135,93.73,43.62,
+Seattle Public Utilities,41 - 45,37.3,72,38.37,119,37.96,191,97.21,60.5,
+Seattle Public Utilities,46 - 50,39.18,83,37.89,134,38.39,217,103.39,61.94,
+Seattle Public Utilities,51 - 55,39.13,109,39.47,140,39.32,249,99.12,77.86,
+Seattle Public Utilities,56 - 60,40.82,92,38.06,124,39.24,216,107.24,74.19,
+Seattle Public Utilities,61 - 65,37.12,58,40.27,64,38.77,122,92.18,90.63,
+Seattle Public Utilities,66 - 70,34.2,7,40.71,20,39.02,27,84.01,35,
+Seattle Public Utilities,over 70,22.56,1,37.03,3,33.42,4,60.92,33.33,
+Seattle Public Utilities Total,,37.82,510,37.46,805,37.6,1315,100.98,63.35,
+Grand Total,,35.35,3600,39.04,6285,37.7,9885,90.55,57.28,
