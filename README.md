@@ -18,7 +18,10 @@ What other examples of data driven projects have you found related to this domai
       bar graphs, tree maps, and geospatial maps.
 3. https://mihiriyer.shinyapps.io/MentalHealth/
     - This is an R Shiny app that visualizes mental health data from the U.S. Departments of Veterans Affairs and their
-      Northeast Program Evaluation Center.
+      Northeast Program Evaluation Center. They released statistics in April 2016 for fiscal year 2015 on "the
+      prevalence, mental health utilization, non-mental health utilization, mental health workload, and psychological
+      testing of Veterans with a possible or confirmed diagnosis of mental illness." The app allows you to see different
+      graphs and specific parts of the data.
 
 What data-driven questions do you hope to answer about this domain (share at least 3)?
 1. Are different mental health issues more prevalent in certain areas?
