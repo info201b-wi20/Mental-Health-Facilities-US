@@ -24,14 +24,14 @@ We are lucky enough to live in a time when there is lots of publicly available d
 
 Where did you download the data (e.g., a web URL)?
 1. N-MHSS-2018: https://www.datafiles.samhsa.gov/study-dataset/national-mental-health-services-survey-2018-n-mhss-2018-ds0001-nid18767
-This data set was downloaded with the Substance Abuse and Mental Health Archive.
+This data set was downloaded from the Substance Abuse and Mental Health Archive.
 2. Connecticut Mental Health Survey (2015-2016): http://data.ctdata.org/visualization/mental-health?v=table&f={%22Variable%22:%20%22Mental%20Health%22,%20%22Region%22:%20%22Connecticut%22,%20%22Measure%20Type%22:%20%22Percent%22,%20%22Year%22:%20%222015-2016%22}
-This data
+This data was downloaded from the Substance Abuse and Mental Health Archive.
 3.
 
 How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 1. The statistics of the N-MHSS-2018 data set was collected by the National Mental Health Services Survey of 2018.
-2.
+2. The data from the Connecticut Mental Health Survey was collected by the Substance Abuse and Mental Health Services Administration (SAMHSA) as part of the National Survey on Drug Use and Health.
 3.
 
 How many observations (rows) are in your data?
