@@ -1,5 +1,7 @@
 # Final Project
+
 ## Domain of Interest
+
 - **Why are you interested in this field/domain? (2-3 sentences)**
     - To explore wage trends in Washington
 
@@ -11,7 +13,7 @@
     - How do wage growth trends differ by location/demographic?
         - Can create visualizations of change in year-to-year median income by location and race to show similarities or differences.
 
-
+***
 ## Finding Data (at least 3 datasets)
 
 ### _Income by Location.csv_
