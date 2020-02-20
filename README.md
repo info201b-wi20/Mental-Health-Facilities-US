@@ -64,3 +64,6 @@ What questions (from above) can be answered using the data in this dataset?
 -
 -
 3. For the data from the National Veteran Health Equity Report data set, we can answer several questions, such as:
+-
+-
+-
