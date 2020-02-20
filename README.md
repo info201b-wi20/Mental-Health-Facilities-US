@@ -4,27 +4,6 @@
 Mental health is a huge topic that has consistently been overlooked despite how widespread the issue of mental health disorders is. There is also a lack of treatment and information for many mental health disorders in a multitude of countries. People across different cultures, languages, socioeconomic classes and ages but not enough individuals talk about it. Therefore, we wanted to address this stigmatized topic and analyze the data for any new insight into
 **mental health issues.**
 
-<div style="color: white; background-color: red; border-radius: 16px; padding: 8px; display: inline-block; font-family: 'Comic Sans MS', sans-serif; font-size: 5em; animation: rotate linear infinite 1s; margin: 200px 0;">mental health</div>
-
-<style>
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-    background-color: red;
-  }
-  25% {background-color: orange;}
-  50% {background-color: green;}
-  75% {
-    background-color: blue;
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    background-color: red;
-  }
-}
-</style>
-
 ## Related Examples of Data Driven Projects
 1. **Our World in Data**: https://ourworldindata.org/mental-health
     - This is a report from _Our World in Data_, an organization based at the University of Oxford to use research and data to
@@ -45,7 +24,7 @@ Mental health is a huge topic that has consistently been overlooked despite how 
 ## What data-driven questions do you hope to answer about this domain?
 1. Are different mental health issues more prevalent in certain areas in the United States than others?
 2. Are there any differences in the quality of mental health care and treatment facilities between states?
-3. Which mental health treatment facilities in different states focus on different mental health disorders?
+3. How many of the patients seeking treatment for depression were treated in each mental health treatment facility across each state?
 
 
 ### Where did you download the data (e.g., a web URL)?
