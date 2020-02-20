@@ -21,7 +21,7 @@ What other examples of data driven projects have you found related to this domai
       bar graphs, tree maps, and geospatial maps.
 3. https://mihiriyer.shinyapps.io/MentalHealth/
     - This is an R Shiny app that visualizes mental health data from the U.S. Departments of Veterans Affairs and their
-      Northeast Program Evaluation Center.
+      Northeast Program Evaluation Center. The data was released in April 2016 for fiscal year 2015,
 
 What data-driven questions do you hope to answer about this domain (share at least 3)?
 1.
