@@ -9,7 +9,7 @@
 - **What other examples of data driven projects have you found related to this domain (share at least 3)?**
     - [_Income by Location_](https://datausa.io/profile/geo/washington#income_geo) by datausa.io. 
         - Visualizes the median household income by WA counties. Visualization can be filtered by race.
-    - [ US Adult Income ] (https://www.kaggle.com/johnolafenwa/us-census-data?fbclid=IwAR3FprwS3f81WjtXvxtDKwnhXCzRj4Ix1I0jnoHzsocGfDSO_09CYHHumL0#adult-training.csv) bykaggle.com.
+    - [ US Adult Income ](https://www.kaggle.com/johnolafenwa/us-census-data?fbclid=IwAR3FprwS3f81WjtXvxtDKwnhXCzRj4Ix1I0jnoHzsocGfDSO_09CYHHumL0#adult-training.csv) by kaggle.com.
         - Visualizes income and how it relates to marital status, education level, age, race, gender, among others and can be sorted by these variables
 
 - **What data-driven questions do you hope to answer about this domain (share at least 3)?**
