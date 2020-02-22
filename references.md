@@ -3,3 +3,5 @@
     - [api](https://www.data.gov/developers/apis)
 - datausa.io 
     - [link](https://datausa.io/profile/geo/washington)
+- kaggle.com 
+    - [link](https://www.kaggle.com/johnolafenwa/us-census-data?fbclid=IwAR3FprwS3f81WjtXvxtDKwnhXCzRj4Ix1I0jnoHzsocGfDSO_09CYHHumL0#adult-training.csv)
