@@ -2,27 +2,18 @@
 title: "index.Rmd"
 output: html_document
 ---
+# (Sophia's part, but if she needs help, all of us can pitch in!)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+index.Rmd File rubric:
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+In the Markdown document you create, you should leverage the functions written in the other files to create your report:
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Write an introductory paragraph explaining the domain/data set (feel free to borrow from the brainstorm part of the assignment)
+Write a summary paragraph that includes information calculated by your summary information function
+Render your table and describe pertinent observations found in it
+Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
+In order to render this information, you'll need to read in your data in (only) your index.Rmd file, and pass your data to the functions provided in each script. If it isn't clear how to these pieces fit together, reach out to your TA.
