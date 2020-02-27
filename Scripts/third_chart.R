@@ -39,9 +39,9 @@ abbr_to_state <- function(abbreviation) {
 render_third_chart <- function(df) {
   df <- df %>%
     group_by(LST) %>%
-    summarize(responses=n()) %>%
+    summarize(responses = n()) %>%
     mutate(region = abbr_to_state(LST))
-  df <- left_join(map_data("state"), df, by="region")
+  df <- left_join(map_data("state"), df, by = "region")
   ggplot(df, aes(long, lat, group = group)) +
     geom_polygon(aes(fill = responses), color = "white") +
     scale_fill_viridis_c(option = "D") +
