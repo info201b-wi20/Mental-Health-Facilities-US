@@ -1,0 +1,131 @@
+ID Age,Age,ID Gender,Gender,ID Year,Year,ID Poverty Status,Poverty Status,Poverty Population,Poverty Population Moe,Geography,ID Geography,Slug Geography,share
+3,"12 to 14 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",19024,1150,"Washington","04000US53","washington",0.022122216407930693
+12,"75 Years & Over",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",24297,927.9999999999999,"Washington","04000US53","washington",0.028253968253968254
+12,"75 Years & Over",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",11877,651,"Washington","04000US53","washington",0.013811268096982382
+0,"Under 5 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",35355,1496,"Washington","04000US53","washington",0.04111285539856968
+11,"65 to 74 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",26088,1030,"Washington","04000US53","washington",0.03033664747950462
+1,"5 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",7428,763,"Washington","04000US53","washington",0.008637711494854351
+11,"65 to 74 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",17328,829,"Washington","04000US53","washington",0.020150008721437292
+1,"5 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6970,642,"Washington","04000US53","washington",0.008105122390836677
+10,"55 to 64 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",46178,1421,"Washington","04000US53","washington",0.053698470841327985
+2,"6 to 11 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",43306,1743.0000000000002,"Washington","04000US53","washington",0.05035874178731321
+10,"55 to 64 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",39444,1174,"Washington","04000US53","washington",0.04586778301064015
+2,"6 to 11 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",42159,1966,"Washington","04000US53","washington",0.0490249433106576
+9,"45 to 54 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",45954,1541,"Washington","04000US53","washington",0.05343799058084772
+0,"Under 5 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",38062,1529,"Washington","04000US53","washington",0.044260712832141405
+9,"45 to 54 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",42221,1329,"Washington","04000US53","washington",0.04909704052561195
+3,"12 to 14 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",17995,1167,"Washington","04000US53","washington",0.0209256352113495
+8,"35 to 44 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",52639,1647,"Washington","04000US53","washington",0.0612116983545555
+4,"15 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6768,562,"Washington","04000US53","washington",0.007870225013082157
+8,"35 to 44 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",39514,1470,"Washington","04000US53","washington",0.045949183092040234
+4,"15 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6335,614,"Washington","04000US53","washington",0.007366707366707367
+7,"25 to 34 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",74200,2000,"Washington","04000US53","washington",0.08628408628408628
+5,"16 & 17 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",14224,888,"Washington","04000US53","washington",0.01654049654049654
+7,"25 to 34 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",54309,1809,"Washington","04000US53","washington",0.0631536717251003
+5,"16 & 17 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",13330,778,"Washington","04000US53","washington",0.01550090121518693
+6,"18 to 24 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",72192,2129,"Washington","04000US53","washington",0.08394906680620966
+6,"18 to 24 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",62753,2132,"Washington","04000US53","washington",0.07297284725856154
+3,"12 to 14 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",19655,893.0000000000001,"Washington","04000US53","washington",0.022252891573903828
+11,"65 to 74 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",16780,771,"Washington","04000US53","washington",0.018997889626563534
+1,"5 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7155,676,"Washington","04000US53","washington",0.008100709194163414
+9,"45 to 54 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",44171,1703,"Washington","04000US53","washington",0.05000928383164111
+3,"12 to 14 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",18625,1093,"Washington","04000US53","washington",0.021086751745813218
+12,"75 Years & Over",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",24200,848,"Washington","04000US53","washington",0.027398625087177445
+0,"Under 5 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",40561,1742,"Washington","04000US53","washington",0.04592213356037208
+8,"35 to 44 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",54302,1583,"Washington","04000US53","washington",0.06147934460677312
+4,"15 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",6898,562,"Washington","04000US53","washington",0.00780974032443595
+10,"55 to 64 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",46108,1382,"Washington","04000US53","washington",0.052202306013205683
+2,"6 to 11 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",44149,1652,"Washington","04000US53","washington",0.049984375990652766
+8,"35 to 44 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",40488,1439,"Washington","04000US53","washington",0.045839484815274396
+4,"15 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",6639,618,"Washington","04000US53","washington",0.007516507105527729
+11,"65 to 74 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",24673,946.9999999999999,"Washington","04000US53","washington",0.027934143668426822
+1,"5 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7889,750,"Washington","04000US53","washington",0.00893172534350177
+7,"25 to 34 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",76424,2126,"Washington","04000US53","washington",0.08652531089514252
+5,"16 & 17 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",14428,771,"Washington","04000US53","washington",0.016335014989991577
+10,"55 to 64 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",38147,1186,"Washington","04000US53","washington",0.04318906409919661
+2,"6 to 11 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",43385,1726,"Washington","04000US53","washington",0.04911939460360303
+7,"25 to 34 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",54628,1897.0000000000002,"Washington","04000US53","washington",0.061848433523236754
+5,"16 & 17 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",13623,764,"Washington","04000US53","washington",0.015423614444736293
+12,"75 Years & Over",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",11366,625,"Washington","04000US53","washington",0.012868296394250365
+0,"Under 5 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",37791,1517,"Washington","04000US53","washington",0.0427860099450216
+6,"18 to 24 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",77047,2075,"Washington","04000US53","washington",0.08723065566494878
+6,"18 to 24 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",66319,2564,"Washington","04000US53","washington",0.07508468665936037
+9,"45 to 54 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",47805,1571,"Washington","04000US53","washington",0.054123606293079246
+9,"45 to 54 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",48537,1498,"Washington","04000US53","washington",0.053424720862245076
+0,"Under 5 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",43375,1599,"Washington","04000US53","washington",0.0477429026804269
+6,"18 to 24 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",80408,2233,"Washington","04000US53","washington",0.08850516008594272
+6,"18 to 24 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",70005,2387,"Washington","04000US53","washington",0.07705456834912472
+12,"75 Years & Over",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",24323,920,"Washington","04000US53","washington",0.026772348631608607
+0,"Under 5 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",40393,1350,"Washington","04000US53","washington",0.044460612518051494
+7,"25 to 34 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",55522,1637,"Washington","04000US53","washington",0.06111311683279912
+5,"16 & 17 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",14500,908.0000000000001,"Washington","04000US53","washington",0.015960163432073543
+12,"75 Years & Over",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",11073,725,"Washington","04000US53","washington",0.012188061357472439
+1,"5 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",8274,740,"Washington","04000US53","washington",0.009107199464619069
+7,"25 to 34 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",78417,2081,"Washington","04000US53","washington",0.08631366454158008
+5,"16 & 17 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",15204,792,"Washington","04000US53","washington",0.016735056884223873
+11,"65 to 74 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",23233,991,"Washington","04000US53","washington",0.025572584621887218
+1,"5 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7526,683,"Washington","04000US53","washington",0.008283875171709344
+8,"35 to 44 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",41147,1687.0000000000002,"Washington","04000US53","washington",0.04529054101651932
+4,"15 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7075,629,"Washington","04000US53","washington",0.007787459053925539
+11,"65 to 74 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",15933,917.0000000000001,"Washington","04000US53","washington",0.01753746785953295
+2,"6 to 11 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",45273,1828,"Washington","04000US53","washington",0.049832033038639006
+8,"35 to 44 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",56810,1705.0000000000002,"Washington","04000US53","washington",0.0625308196259378
+4,"15 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",6960,580,"Washington","04000US53","washington",0.007660878447395302
+10,"55 to 64 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",44984,1333,"Washington","04000US53","washington",0.04951393047092388
+2,"6 to 11 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",44982,1979,"Washington","04000US53","washington",0.049511729069071184
+9,"45 to 54 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",45976,1468,"Washington","04000US53","washington",0.05060582578986299
+3,"12 to 14 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",19438,1035,"Washington","04000US53","washington",0.021395424606389348
+10,"55 to 64 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",37713,1151,"Washington","04000US53","washington",0.04151073403543377
+3,"12 to 14 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",21431,1120,"Washington","04000US53","washington",0.0235891215526047
+8,"35 to 44 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",43008,1493,"Washington","04000US53","washington",0.0469333147090021
+6,"18 to 24 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",82594,2385,"Washington","04000US53","washington",0.09013230550305337
+3,"12 to 14 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",21742,1190,"Washington","04000US53","washington",0.023726379473658937
+10,"55 to 64 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",35435,1241,"Washington","04000US53","washington",0.03866913148050338
+3,"12 to 14 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",19685,1081,"Washington","04000US53","washington",0.021481638300937182
+9,"45 to 54 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",45182,1461,"Washington","04000US53","washington",0.04930573440248635
+2,"6 to 11 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",46097,1752,"Washington","04000US53","washington",0.050304245911013526
+10,"55 to 64 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",43659,1347,"Washington","04000US53","washington",0.0476437310937575
+4,"15 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",7361,651,"Washington","04000US53","washington",0.008032834113954716
+8,"35 to 44 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",57285,1812,"Washington","04000US53","washington",0.06251336805025078
+2,"6 to 11 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",47054,1786.0000000000002,"Washington","04000US53","washington",0.051348590734686214
+11,"65 to 74 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",15267,781,"Washington","04000US53","washington",0.016660410055392837
+4,"15 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",7493,570,"Washington","04000US53","washington",0.008176881675840604
+9,"45 to 54 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",48326,1571,"Washington","04000US53","washington",0.05273668542195023
+1,"5 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",7826,731,"Washington","04000US53","washington",0.008540274388780005
+11,"65 to 74 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",22095,855.0000000000001,"Washington","04000US53","washington",0.024111597574762868
+5,"16 & 17 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",14741,696,"Washington","04000US53","washington",0.016086402346665734
+7,"25 to 34 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",79459,1916.9999999999998,"Washington","04000US53","washington",0.08671117590826354
+1,"5 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8174,707,"Washington","04000US53","washington",0.008920036142842801
+12,"75 Years & Over",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",10184,585,"Washington","04000US53","washington",0.011113487653377916
+5,"16 & 17 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",14621,685,"Washington","04000US53","washington",0.015955450017678563
+7,"25 to 34 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",55826,1839.0000000000002,"Washington","04000US53","washington",0.06092120598364842
+0,"Under 5 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",42975,1587,"Washington","04000US53","washington",0.04689730281853063
+12,"75 Years & Over",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",23476,1014,"Washington","04000US53","washington",0.02561864062752356
+6,"18 to 24 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",71492,2151,"Washington","04000US53","washington",0.0780170325329236
+0,"Under 5 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",45307,1518,"Washington","04000US53","washington",0.049442143078514654
+5,"16 & 17 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",14406,1017.9999999999999,"Washington","04000US53","washington",0.016128328021038703
+10,"55 to 64 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",41196,1381,"Washington","04000US53","washington",0.046121241229675855
+8,"35 to 44 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",55660,1749.9999999999998,"Washington","04000US53","washington",0.062314503515966554
+3,"12 to 14 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",19428,1147,"Washington","04000US53","washington",0.02175073974682354
+7,"25 to 34 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",53662,1708,"Washington","04000US53","washington",0.06007763003366506
+4,"15 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",6704,557,"Washington","04000US53","washington",0.007505505418092701
+11,"65 to 74 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",13797,693,"Washington","04000US53","washington",0.015446518235892751
+1,"5 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8115,650,"Washington","04000US53","washington",0.009085199353792105
+9,"45 to 54 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",44578,1562,"Washington","04000US53","washington",0.04990758062764565
+0,"Under 5 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",44898,1631,"Washington","04000US53","washington",0.050265838642829075
+6,"18 to 24 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",71069,2032,"Washington","04000US53","washington",0.07956574650334579
+11,"65 to 74 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",20997,934,"Washington","04000US53","washington",0.023507323577519758
+7,"25 to 34 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",76765,2037,"Washington","04000US53","washington",0.08594273917361071
+3,"12 to 14 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",21112,1143,"Washington","04000US53","washington",0.0236360725517263
+9,"45 to 54 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",46981,1435,"Washington","04000US53","washington",0.052597874410413664
+1,"5 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",7385,634,"Washington","04000US53","washington",0.008267923256654923
+12,"75 Years & Over",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",9356,657,"Washington","04000US53","washington",0.010474568718925315
+5,"16 & 17 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",14434,857,"Washington","04000US53","washington",0.01615967559736725
+4,"15 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",7018,609,"Washington","04000US53","washington",0.007857046095491435
+8,"35 to 44 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",42564,1422,"Washington","04000US53","washington",0.04765279424458499
+10,"55 to 64 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",33615,1019,"Washington","04000US53","washington",0.037633884938721086
+12,"75 Years & Over",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",22605,979.9999999999999,"Washington","04000US53","washington",0.025307570103816457
+2,"6 to 11 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",45373,1718,"Washington","04000US53","washington",0.050797627884116965
+2,"6 to 11 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",46276,1878,"Washington","04000US53","washington",0.05180858722071269
+0,"Under 5 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",42101,1399,"Washington","04000US53","washington",0.04713443967886647
+6,"18 to 24 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",83116,2184,"Washington","04000US53","washington",0.0930530412187042

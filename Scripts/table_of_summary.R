@@ -93,11 +93,11 @@ lint("table_of_summary.R")
 # Step 3: "Finalize, group by, and summarize"
 # After all of that cleaning process, I made the final decision to
 # keep...
-# NOTREAT (NO_identified_mental_health_treatment_approaches),
-# SIGNLANG (Provides_sign_language),
-# LANGPROV (Provides services in languages other than English),
-# QUALREV (Regularly_scheduled_quality_reviews),
-# and OUTFUP(Regularly_followup_after_discharge) as the categories that will
+# 1. NOTREAT (NO_identified_mental_health_treatment_approaches),
+# 2. SIGNLANG (Provides_sign_language),
+# 3. LANGPROV (Provides services in languages other than English),
+# 4. QUALREV (Regularly_scheduled_quality_reviews),
+# & 5. OUTFUP(Regularly_followup_after_discharge) as the categories that will
 # be used to make up the final summary to compare different state's facilities'
 # quality, for the other few columns talk about the facilities from an
 # organization aspect such as what type of facility they are or what their
@@ -190,15 +190,14 @@ summary_table <-
   group_by(State) %>%
   summarize(
     Offer_diagnostic_evaluations =
-      sum(Offer_diagnostic_evaluations == "Yes",
-          na.rm = TRUE
-      ),
+      sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
     NO_identified_mental_health_treatment_approaches =
       sum(NO_identified_mental_health_treatment_approaches == "Yes",
-          na.rm = TRUE
-      ),
+          na.rm = TRUE),
     Provides_sign_language =
       sum(Provides_sign_language == "Yes", na.rm = TRUE),
+    Provides_languages_other_than_English =
+      sum(Provides_languages_other_than_English == "Yes", na.rm = TRUE),
     Regularly_scheduled_quality_reviews =
       sum(Regularly_scheduled_quality_reviews == "Yes", na.rm = TRUE),
     Regularly_followup_after_discharge =

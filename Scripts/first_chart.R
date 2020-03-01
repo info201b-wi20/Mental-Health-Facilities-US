@@ -8,17 +8,7 @@
 
 summary_table <- 
   read.csv("../Data/mental_health_data.csv", stringsAsFactors = FALSE) %>%
-  select(
-    LST, 
-    MHDIAGEVAL, 
-    FACILITYTYPE, 
-    FOCUS, 
-    OWNERSHP, 
-    NOTREAT, 
-    SIGNLANG, 
-    LANGPROV, 
-    QUALREV, 
-    OUTFUP) %>%
+  select(MHDIAGEVAL) %>%
   within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
   within(FACILITYTYPE <- factor(FACILITYTYPE, labels = c(
     "Psychiatric hospital", 
@@ -72,16 +62,7 @@ summary_table <-
     "Yes"
   ))) %>%
   rename(
-    "State" = LST,
     "Offer_diagnostic_evaluations" = MHDIAGEVAL,
-    "Facility" = FACILITYTYPE,
-    "Primary_treatment_focus" = FOCUS,
-    "Organization_type" = OWNERSHP,
-    "NO_identified_mental_health_treatment_approaches" = NOTREAT,
-    "Provides_sign_language" = SIGNLANG,
-    "Provides_languages_other_than_English" = LANGPROV,
-    "Regularly_scheduled_quality_reviews" = QUALREV,
-    "Regularly_followup_after_discharge" = OUTFUP
   ) %>%
   group_by(State) %>%
   summarize(
