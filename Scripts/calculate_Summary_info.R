@@ -52,6 +52,8 @@ ret <- list(total = total_mental_health_facilities, most_resources =
     return (ret)
   }  
 
+# list_summary <- get_summary_info(mental_health_resources)
+
 # We don't expect you to write a generalizable function that works with any dataset. 
 # Instead, think of this like a simple analysis you would do on this particular dataset, just wrapped in a function. 
 # This will allow you to pass your dataset into this function from your index.Rmd file. 
