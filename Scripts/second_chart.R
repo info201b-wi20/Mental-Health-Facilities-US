@@ -9,3 +9,4 @@
   
 # Proper labels/titles/legends
 # Intentional chart type and encoding selection based on the question of interest and data type
+mental_health_data <-read.csv("../Data/mental_health_data.csv")
