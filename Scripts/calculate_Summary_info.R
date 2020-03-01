@@ -2,25 +2,53 @@
 # The first file you should save in your scripts/ directory should contain a function that takes in a dataset as a parameter, 
 # and returns a list of information about it. For example:
 
+rm(list = ls())
+# Libraries Needed
 library(styler)
 library(lintr)
 library(dplyr)
-library(tidyr)
-library(knitr)
 
 mental_health_resources <- read.csv("../Data/mental_health_summary_table.csv",
   stringsAsFactors = FALSE)
-  
+
+# A function that takes in a dataset and returns a list of info about it:
+get_summary_info <- function(mental_health_resources) {
+# total facilities across America that offer mental health resources
+total_mental_health_facilities <-
+  sum(mental_health_resources$Offer_diagnostic_evaluations)
+# state that has the most mental health facilities -- California which
+# makes sense as CA has the biggest population among all the states
 state_highest_mental_health_resources <- mental_health_resources %>%
   filter(Offer_diagnostic_evaluations ==
-  max(Offer_diagnostic_evaluations, na.rm = TRUE)) %>%
+    max(Offer_diagnostic_evaluations, na.rm = TRUE)) %>%
   pull(State)
-  
-  # A function that takes in a dataset and returns a list of info about it:
-  get_summary_info <- function(dataset) {
-    ret <- list()
-    ret$length <- length(dataset)
-    # do some more interesting stuff
+# number of facilities that provide mental health resources in
+# Washington State
+washington_facilities <- mental_health_resources %>%
+  select(State, Offer_diagnostic_evaluations) %>%
+  filter(State == "WA") %>%
+  pull(Offer_diagnostic_evaluations)
+# number of mental health facilities that conducted diagnostic tests
+# but also took the time and effort to do followup checkups on those
+# patients across the US
+percent_with_followup_checkups <- mental_health_resources %>%
+  select(Offer_diagnostic_evaluations, Regularly_followup_after_discharge) %>%
+  summarize(percent_followup_checks =
+    round(sum(Regularly_followup_after_discharge) /
+    sum(Offer_diagnostic_evaluations) * 100, digits = 2)) %>%
+  pull()
+# proportion of mental health facilities across the nation that take into
+# account people with hearing impairments by implementing the use of
+# sign language
+facilities_with_sign_language <- mental_health_resources %>%
+  select(Offer_diagnostic_evaluations, Provides_sign_language) %>%
+  summarize(percent_with_sign_lang = round(sum(Provides_sign_language) /
+    sum(Offer_diagnostic_evaluations) * 100, digits = 2)) %>%
+  pull()
+ret <- list(total = total_mental_health_facilities, most_resources =
+  state_highest_mental_health_resources, washington = washington_facilities,
+  followups = percent_with_followup_checkups, sign_language =
+    facilities_with_sign_language)
     return (ret)
   }  
 
