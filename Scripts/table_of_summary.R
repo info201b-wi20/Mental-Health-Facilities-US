@@ -45,7 +45,8 @@ lint("table_of_summary.R")
 # do NOT have any mental health treatment approaches provided to patients
 # such as psychotropic medications, therapies, or any disorder treatments),
 # - SIGNLANG (Whether facilities that offer sign language services),
-# - LANGPROV (Whether facilities offer services in languages other than English),
+# - LANGPROV (Whether facilities offer services in languages other than
+# English),
 # - QUALREV (Whether facilities have regularly scheduled case review by an
 # appointed quality review committee as part of their standard operating
 # procedure),
@@ -108,7 +109,6 @@ lint("table_of_summary.R")
 # at the facility, whether they provide sign language, other languages,
 # whether they have regularly scheduled quality inspections, and whether
 # they keep up with patients after discharge)
-
 summary_table <-
   read.csv("../Data/mental_health_data.csv", stringsAsFactors = FALSE) %>%
   select(
@@ -193,7 +193,8 @@ summary_table <-
       sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
     NO_identified_mental_health_treatment_approaches =
       sum(NO_identified_mental_health_treatment_approaches == "Yes",
-          na.rm = TRUE),
+        na.rm = TRUE
+      ),
     Provides_sign_language =
       sum(Provides_sign_language == "Yes", na.rm = TRUE),
     Provides_languages_other_than_English =
