@@ -45,7 +45,7 @@ lint("table_of_summary.R")
 # do NOT have any mental health treatment approaches provided to patients
 # such as psychotropic medications, therapies, or any disorder treatments),
 # - SIGNLANG (Whether facilities that offer sign language services),
-# - LANGPROV (Whether facilities offer services in languages other than
+# - LANG (Whether facilities offer services in languages other than
 # English),
 # - QUALREV (Whether facilities have regularly scheduled case review by an
 # appointed quality review committee as part of their standard operating
@@ -66,7 +66,7 @@ lint("table_of_summary.R")
 # 2. MHDIAGEVAL (Offer_diagnostic_evaluations)
 # 3. NOTREAT (NO_identified_mental_health_treatment_approaches),
 # 4. SIGNLANG (Provides_sign_language),
-# 5. LANGPROV (Provides services in languages other than English),
+# 5. LANG (Provides services in languages other than English),
 # 6. QUALREV (Regularly_scheduled_quality_reviews),
 # 7. OUTFUP(Regularly_followup_after_discharge) as the categories that will
 # be used to make up the final summary to compare different state's facilities'
@@ -89,7 +89,7 @@ lint("table_of_summary.R")
 # OWNERSHP became "Organization_type",
 # NOTREAT became "NO_identified_mental_health_treatment_approaches",
 # SIGNLANG became "Provides_sign_language",
-# LANGPROV became "Provides_languages_other_than_English",
+# LANG became "Provides_languages_other_than_English",
 # QUALREV became "Regularly_scheduled_quality_reviews",
 # OUTFUP became "Regularly_followup_after_discharge"
 
@@ -100,7 +100,7 @@ lint("table_of_summary.R")
 # 2. MHDIAGEVAL (Offer_diagnostic_evaluations)
 # 3. NOTREAT (NO_identified_mental_health_treatment_approaches),
 # 4. SIGNLANG (Provides_sign_language),
-# 5. LANGPROV (Provides services in languages other than English),
+# 5. LANG (Provides services in languages other than English),
 # 6. QUALREV (Regularly_scheduled_quality_reviews),
 # 7. OUTFUP(Regularly_followup_after_discharge) as the categories that will
 # be used to make up the final summary to compare different state's facilities'
@@ -125,7 +125,7 @@ summary_table <-
     OWNERSHP,
     NOTREAT,
     SIGNLANG,
-    LANGPROV,
+    LANG,
     QUALREV,
     OUTFUP
   ) %>%
@@ -155,29 +155,27 @@ summary_table <-
     "Public agency or department"
   ))) %>%
   within(NOTREAT <- factor(NOTREAT, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
   within(SIGNLANG <- factor(SIGNLANG, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
-  within(LANGPROV <- factor(LANGPROV, labels = c(
+  within(LANG <- factor(LANG, labels = c(
     "NA",
-    "Missing",
-    "Staff who speak a language other than English",
-    "On-call interpreter brought in when needed",
-    "Both staff and on-call interpreter"
+    "No",
+    "Yes"
   ))) %>%
   within(QUALREV <- factor(QUALREV, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
   within(OUTFUP <- factor(OUTFUP, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
@@ -189,7 +187,7 @@ summary_table <-
     "Organization_type" = OWNERSHP,
     "NO_identified_mental_health_treatment_approaches" = NOTREAT,
     "Provides_sign_language" = SIGNLANG,
-    "Provides_languages_other_than_English" = LANGPROV,
+    "Provides_languages_other_than_English" = LANG,
     "Regularly_scheduled_quality_reviews" = QUALREV,
     "Regularly_followup_after_discharge" = OUTFUP
   ) %>%
