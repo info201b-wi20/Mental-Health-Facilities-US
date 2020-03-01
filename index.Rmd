@@ -5,7 +5,13 @@ output: html_document
 # (Sophia's part, but if she needs help, all of us can pitch in!)
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+source("Scripts/calculate_Summary_info.R")
+source("Scripts/first_chart.R")
+source("Scripts/second_chart.R")
+source("Scripts/third_chart.R")
+source("Scripts/table_of_summary.R")
+library(knitr)
 ```
 
 index.Rmd File rubric:
