@@ -1,0 +1,7 @@
+- Data.gov
+    - [link](https://catalog.data.gov/organization/city-of-seattle?q=salary&sort=score+desc%2C+metadata_modified+desc&as_sfid=AAAAAAWZtFT1zZlfivVQKAYGMXCa4mfYgXFog8KVCq8hPKINjLU1p9dhBfdiLcqh0egDNffiDbOK16AAl3HRsToIVbpi69kxGuZSjixLWS13b3AKoGA-2SE27P_s0PG93EoknHA%3D&as_fid=fe6354b0a04c5e3b20614733f1e525074caa04f2)
+    - [api](https://www.data.gov/developers/apis)
+- datausa.io 
+    - [link](https://datausa.io/profile/geo/washington)
+- kaggle.com 
+    - [link](https://www.kaggle.com/johnolafenwa/us-census-data?fbclid=IwAR3FprwS3f81WjtXvxtDKwnhXCzRj4Ix1I0jnoHzsocGfDSO_09CYHHumL0#adult-training.csv)
