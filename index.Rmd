@@ -25,13 +25,13 @@ Out of all health facilities across the United States, **`r list_summary$total`*
 
 ***
 
-## Mental Health Summary Table
+## US Mental Health Summary Table
 ``` {r echo = FALSE}
 knitr::kable(Data/mental_health_summary_table, format = "markdown")
 ```
 
-- Render your table and describe pertinent observations found in it
-NEED OBSERVATIONS
+Some of the most helpful insights within this US Mental Health Summary Statistics Table:
+1. The health facilities included within the data isn't limited to the 50 states but also includes Washington D.C. and other US Territories as separate data statistics.
 
 - Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
 - In order to render this information, you'll need to read in your data in (only) your index.Rmd file, and pass your data to the functions provided in each script. If it isn't clear how to these pieces fit together, reach out to your TA.

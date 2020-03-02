@@ -197,7 +197,7 @@ summary_table <-
       sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
     NO_identified_mental_health_treatment_approaches =
       sum(NO_identified_mental_health_treatment_approaches == "Yes",
-          na.rm = TRUE
+        na.rm = TRUE
       ),
     Provides_sign_language =
       sum(Provides_sign_language == "Yes", na.rm = TRUE),
