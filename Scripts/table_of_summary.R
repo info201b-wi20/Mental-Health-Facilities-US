@@ -45,13 +45,14 @@ lint("table_of_summary.R")
 # do NOT have any mental health treatment approaches provided to patients
 # such as psychotropic medications, therapies, or any disorder treatments),
 # - SIGNLANG (Whether facilities that offer sign language services),
-# - LANGPROV (Whether facilities offer services in languages other than English),
+# - LANG (Whether facilities offer services in languages other than
+# English),
 # - QUALREV (Whether facilities have regularly scheduled case review by an
 # appointed quality review committee as part of their standard operating
 # procedure),
 # - OUTFUP (Whether facilities have client outcome follow-up after discarge as
 # part if their standard operating procedure)
-# These 9 columns are the columns I found most important from the raw dataset
+# These 10 columns are the columns I found most important from the raw dataset
 # because they answer key questions regarding the quality of a health facility,
 # such as their location and facility type, whether they offer diagnostics,
 # what their main focus is, whether they have any mental health treatments,
@@ -61,16 +62,18 @@ lint("table_of_summary.R")
 # and customer care.
 # NOTE: In later steps of the summary table making procedure,
 # I would end up picking
-# NOTREAT (NO_identified_mental_health_treatment_approaches),
-# SIGNLANG (Provides_sign_language),
-# LANGPROV (Provides services in languages other than English),
-# QUALREV (Regularly_scheduled_quality_reviews),
-# and OUTFUP(Regularly_followup_after_discharge) as the categories that will
+# 1. LST (State)
+# 2. MHDIAGEVAL (Offer_diagnostic_evaluations)
+# 3. NOTREAT (NO_identified_mental_health_treatment_approaches),
+# 4. SIGNLANG (Provides_sign_language),
+# 5. LANG (Provides services in languages other than English),
+# 6. QUALREV (Regularly_scheduled_quality_reviews),
+# 7. OUTFUP(Regularly_followup_after_discharge) as the categories that will
 # be used to make up the final summary to compare different state's facilities'
 # quality, for the other few columns talk about the facilities from an
 # organization aspect such as what type of facility they are or what their
 # organization ownership is of, but in this 1st step of the cleaning process
-# I kept all 9 columns.
+# I kept all 10 columns.
 
 # Step 2: "Renaming column names and the row"
 # The raw dataset had all of their string values represented as numbers
@@ -86,29 +89,32 @@ lint("table_of_summary.R")
 # OWNERSHP became "Organization_type",
 # NOTREAT became "NO_identified_mental_health_treatment_approaches",
 # SIGNLANG became "Provides_sign_language",
-# LANGPROV became "Provides_languages_other_than_English",
+# LANG became "Provides_languages_other_than_English",
 # QUALREV became "Regularly_scheduled_quality_reviews",
 # OUTFUP became "Regularly_followup_after_discharge"
 
 # Step 3: "Finalize, group by, and summarize"
 # After all of that cleaning process, I made the final decision to
 # keep...
-# 1. NOTREAT (NO_identified_mental_health_treatment_approaches),
-# 2. SIGNLANG (Provides_sign_language),
-# 3. LANGPROV (Provides services in languages other than English),
-# 4. QUALREV (Regularly_scheduled_quality_reviews),
-# & 5. OUTFUP(Regularly_followup_after_discharge) as the categories that will
+# 1. LST (State)
+# 2. MHDIAGEVAL (Offer_diagnostic_evaluations)
+# 3. NOTREAT (NO_identified_mental_health_treatment_approaches),
+# 4. SIGNLANG (Provides_sign_language),
+# 5. LANG (Provides services in languages other than English),
+# 6. QUALREV (Regularly_scheduled_quality_reviews),
+# 7. OUTFUP(Regularly_followup_after_discharge) as the categories that will
 # be used to make up the final summary to compare different state's facilities'
-# quality, for the other few columns talk about the facilities from an
+# quality, as the other few columns talk about the facilities from an
 # organization aspect such as what type of facility they are or what their
-# organization ownership is of.
+# organization ownership is of I decided to not consider them as important
+# columns for comparing the states' health facility qualities.
 # I used grouped_by to group all the data by
-# State, and the summarized the above 4 columns by the counts of "Yes" to
-# the respective columns (such as whether they have no treatments provided
-# at the facility, whether they provide sign language, other languages,
-# whether they have regularly scheduled quality inspections, and whether
-# they keep up with patients after discharge)
-
+# State, and the summarized the above 6 columns (excluding state as that is
+# what I grouped by) by the counts of "Yes" to
+# the respective columns (such as whether they have mental health treatments
+# provided at the various facility or not, whether they provide sign language,
+# other languages, whether they have regularly scheduled quality inspections,
+# and whether they keep up with patients after discharge)
 summary_table <-
   read.csv("../Data/mental_health_data.csv", stringsAsFactors = FALSE) %>%
   select(
@@ -119,7 +125,7 @@ summary_table <-
     OWNERSHP,
     NOTREAT,
     SIGNLANG,
-    LANGPROV,
+    LANG,
     QUALREV,
     OUTFUP
   ) %>%
@@ -149,29 +155,27 @@ summary_table <-
     "Public agency or department"
   ))) %>%
   within(NOTREAT <- factor(NOTREAT, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
   within(SIGNLANG <- factor(SIGNLANG, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
-  within(LANGPROV <- factor(LANGPROV, labels = c(
+  within(LANG <- factor(LANG, labels = c(
     "NA",
-    "Missing",
-    "Staff who speak a language other than English",
-    "On-call interpreter brought in when needed",
-    "Both staff and on-call interpreter"
+    "No",
+    "Yes"
   ))) %>%
   within(QUALREV <- factor(QUALREV, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
   within(OUTFUP <- factor(OUTFUP, labels = c(
-    "Missing",
+    "NA",
     "No",
     "Yes"
   ))) %>%
@@ -183,7 +187,7 @@ summary_table <-
     "Organization_type" = OWNERSHP,
     "NO_identified_mental_health_treatment_approaches" = NOTREAT,
     "Provides_sign_language" = SIGNLANG,
-    "Provides_languages_other_than_English" = LANGPROV,
+    "Provides_languages_other_than_English" = LANG,
     "Regularly_scheduled_quality_reviews" = QUALREV,
     "Regularly_followup_after_discharge" = OUTFUP
   ) %>%
@@ -193,7 +197,8 @@ summary_table <-
       sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
     NO_identified_mental_health_treatment_approaches =
       sum(NO_identified_mental_health_treatment_approaches == "Yes",
-          na.rm = TRUE),
+          na.rm = TRUE
+      ),
     Provides_sign_language =
       sum(Provides_sign_language == "Yes", na.rm = TRUE),
     Provides_languages_other_than_English =
