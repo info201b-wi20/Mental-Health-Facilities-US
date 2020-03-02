@@ -9,4 +9,21 @@
   
 # Proper labels/titles/legends
 # Intentional chart type and encoding selection based on the question of interest and data type
-mental_health_data <-read.csv("../Data/mental_health_data.csv")
+library(dplyr)
+library(ggplot2)
+library(plotly)
+
+# For the data, we used a data table that is essentially a summary table of the main data set that we used.
+# This is all inside of the data folder
+mental_health_data <-read.csv("../Data/mental_health_summary_table.csv")
+
+sign_language_data <- ggplot(data = mental_health_data) + 
+    geom_point(mapping = aes(x = State, y = Provides_sign_language)) +
+  
+  labs(
+    title = "Amount of Institutions Per State That Provides Sign Language",
+    x = "States",
+    y = "Amount of Institutions"
+  )
+
+ggplotly(sign_language_data)
