@@ -21,16 +21,32 @@ Mental health is a huge topic that has consistently been overlooked despite how 
 
 ## Overview of US Mental Health Facilities
 
+Out of all health facilities across the United States, **`r list_summary$total`** of those facilities offer mental health services and resources. All of these facilities that had mental health services conducted diagnostic tests for a range of mental illnesses. Of these, **`r list_summary$followups`%** took the time and effort to do followup checkups on patients that were diagnosed from the tests -- whether that was to set up a followup appointment or link those individuals to other professional mental health resources. It was also very interesting seeing what facilities took into account people with sensory impairments. Approximately **`r list_summary$sign_language`%** of the facilities offering mental health facilities implement the use of sign language to better treat individuals with hearing disabilities. The state with the most resources was _`r list_summary$most_resources`_ which isn't surprising as _California_ has the largest population among the American states. In _Washington_ state, **`r list_summary$washington`** health facilities provided mental health services.
+
+***
+
+## Mental Health Summary Table
 ``` {r echo = FALSE}
 knitr::kable(Data/mental_health_summary_table, format = "markdown")
 ```
 
-Out of all health facilities across the United States, **`r list_summary$total`** of those facilities offer mental health services and resources. All of these facilities that had mental health services conducted diagnostic tests for a range of mental illnesses. Of these, **`r list_summary$followups`%** took the time and effort to do followup checkups on patients that were diagnosed from the tests -- whether that was to set up a followup appointment or link those individuals to other professional mental health resources. It was also very interesting seeing what facilities took into account people with sensory impairments. Approximately **`r list_summary$sign_language`%** of the facilities offering mental health facilities implement the use of sign language to better treat individuals with hearing disabilities. The state with the most resources was _`r list_summary$most_resources`_ which isn't surprising as _California_ has the largest population among the American states. In _Washington_ state, **`r list_summary$washington`** health facilities provided mental health services.
-
-
 - Render your table and describe pertinent observations found in it
+NEED OBSERVATIONS
+
 - Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
 - In order to render this information, you'll need to read in your data in (only) your index.Rmd file, and pass your data to the functions provided in each script. If it isn't clear how to these pieces fit together, reach out to your TA.
+
+```{r}
+data <- read.csv("Data/mental_health_data.csv")
+source("Scripts/first_chart.R")
+render_first_chart(data)
+```
+
+```{r}
+data <- read.csv("Data/mental_health_data.csv")
+source("Scripts/second_chart.R")
+render_second_chart(data)
+```
 
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
