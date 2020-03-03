@@ -4,16 +4,9 @@ library(dplyr)
 
 style_file("table_of_summary.R")
 lint("table_of_summary.R")
-# Aggregate Table of Summary criteria: (Ann's part)
-# The second file you should save in your scripts/ directory should contain a
-# function that takes in a dataset as a parameter, and returns a table of
-# aggregate information about it. It must perform a groupby operation to show
-# a dimension of the dataset as grouped by a particular feature (column).
-# We expect the included table to:
-# - Have well formatted column names
-# - Only contain relevant information
-# - Be intentionally sorted in a meaningful way
-# Must describe why you included the table, and what information it reveals.
+
+# NOTE TO SAASHA: The raw data file has all their column names in all CAPS,
+# not in stake_case. There are lintr errors that will be thrown due to this.
 
 # - Introduces the table, explaining why the particular grouping calculation
 # was performed (**2 points**)
@@ -31,7 +24,7 @@ lint("table_of_summary.R")
 # Step 1: "Picking initial appropriate columns"
 # Read in the csv file and select only columns that I view as most
 # important for now, including...
-# - LST (State),
+# - LST (State, "ZZ" values mean "other jurisdiction"),
 # - MHDIAGEVAL (Whether facilities offer mental health diagnostic evaluations),
 # - FACILITYTYPE (What type of facility the organization is, such as community
 # mental health center, residential treatment center, etc...),
@@ -208,3 +201,13 @@ summary_table <-
     Regularly_followup_after_discharge =
       sum(Regularly_followup_after_discharge == "Yes", na.rm = TRUE)
   )
+
+# Table of summary significance:
+# Through this table we are able to see by state how each state compare 
+# to eachother in terms of whether facilities offer diagnostic evaluations
+# for mental health patients, whether facilities have any identified mental
+# health treatment approaches or not, whether facilities provid sign language
+# services, whether facilities provide languages other than English,
+# whether facilities have regularly scheduled quality reviews from committees,
+# and whether facilities have regular followups for patients after 
+# their discharge.
