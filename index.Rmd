@@ -16,13 +16,13 @@ source("Scripts/table_of_summary.R")
 
 Mental health is a huge topic that has consistently been overlooked despite how widespread and non-discriminatory the issue of mental health disorders is. Mental illnesses affects millions of individuals with diverse backgrounds but the world has largely failed to treat mental health disorders as seriously as physical illnesses. Unfortunately, there is also a lack of treatment and information for many mental health disorders in a multitude of countries. The data set we are analyzing concerns statistics about the health facilities with mental health resources within the _United States_ only. We are interested in seeing the different amounts of mental health resources being offered across the country as well as what sort of services these health facilities provide and how inclusive they are in treating mental health disorders across the spectrum.
 
-
+***
 
 ## Overview of US Mental Health Facilities
 
 Out of all health facilities across the United States, **`r list_summary$total`** of those facilities offer mental health services and resources. All of these facilities that had mental health services conducted diagnostic tests for a range of mental illnesses. Of these, **`r list_summary$followups`%** took the time and effort to do followup checkups on patients that were diagnosed from the tests -- whether that was to set up a followup appointment or link those individuals to other professional mental health resources. It was also very interesting seeing what facilities took into account people with sensory impairments. Approximately **`r list_summary$sign_language`%** of the facilities offering mental health facilities implement the use of sign language to better treat individuals with hearing disabilities. The state with the most resources was _`r list_summary$most_resources`_ which isn't surprising as _California_ has the largest population among the American states. In _Washington_ state, **`r list_summary$washington`** health facilities provided mental health services.
 
-
+***
 
 ## US Mental Health Summary Table
 
@@ -38,43 +38,53 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 2. California, which has the highest population among the states, has the highest number of mental health facilities that provides sign language and languages other than English.
 3. In **Washington** state, there are 327 mental health facilities available. Of these mental health facilities, 239 facilities provided sign language and 286 provided languages other than English to better cater to a more diverse demographic.
 
+***
 
-```{r}
+## State and Diagnostics Barchart
+
+Mental health diagnostics is extremely important and useful for identifying which mental illness a patient could have. Therefore, a barchart was found to be most appropriate in showing this visualization. Although mental health diagnostics can also be provided in places that are not treatment facilities, it is very convenient if both the diagnosis and treatment can be provided in the same place. So knowing how many facilities provide mental health diagnostics would be very useful for people to know.
+
+```{r echo = FALSE}
 data <- read.csv("Data/mental_health_data.csv")
 state_vs_diagnostics_barchart(data)
 ```
 
-Purpose:
-Mental health diagnostics is extremely important and useful for identifying which mental illness a patient could have. Although mental health diagnostics can also be provided in places that are not treatment facilities, it is very convenient if both the diagnosis and treatment can be provided in the same place. So knowing how many facilities provide mental health diagnostics would be very useful for people to know.
-
 Important Observations:
+
 1. The state with the most amount of facilities that provides mental health diagnostics is California, with 788 facilities.
 2. The state with the least amount of facilities that provides mental health diagnostics is North Dakota, with 32 facilities.
 3. Most of the states have below 400 facilities that provides mental health diagnostics.
 
+***
 
-```{r}
+## Sign Language Resources Scatterplot
+
+There are a lot of victims of mental illness that are deaf/hard of hearing. Some of their mental health issues could have also stemmed from the fact that they are deaf/hard of hearing. This scatterplot allows clear representation of the amount of resources for individuals with hearing impairments across different states. So knowing how many institutions provide sign language in every state would be very helpful for people that needs it to communicate.
+
+```{r echo = FALSE}
 data <- read.csv("Data/mental_health_summary_table.csv")
 sign_language_data(data)
 ```
 
-Purpose: 
-The purpose of this chart is that we wanted to find out how many institutions per  state had sign language as part of their service. There are a lot of victims of mental illness that are deaf/hard of hearing. Some of their mental health issues could have also stemmed from the fact that they are deaf/hard of hearing. So knowing how many institutions  provides sign language would be very helpful for people that needs it to communicate.
-
 Important Observations: 
+
 1. The state that provides the most institutions with sign language is California, with 439 institutions.
 2. The state with the least amount of institutions that provides sign language is Wyoming at only 16 institutions.
 3. Most states have between 20 - 250 institutions that provide sign language.
 
+***
 
-```{r}
+## US Map of Mental Health Facilities
+
+Knowing how many facilities actually responded to the survey is good to know because it gives a good general sense of which facilities are transparent in the information they give out and shows which facilities are underreporting what services they provide. This heat map of the US shows the number of facilities that offer mental health diagnosis across the different states. This information can be utilized to help give potential patients a sense of trust and aid their decision of which state they would want to go to for treatment based on the services the facilities say they provide.
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
 data <- read.csv("Data/mental_health_data.csv")
 render_third_chart(data)
 ```
 
-Purpose:
-Knowing how many facilities actually responded to the survey is good to know because it gives a good general sense of which facilities are transparent in the information they give out and shows which facilities are underreporting what services they provide. Knowing this information can also help give potential patients a sense of trust and help them decide which state they would want to go to for treatment based on the services the facilities say they provide.
-
 Important Observations:
+
 1. California and New York are the states that gave the most responses, at over 800 responses.
-2. The inner part of the United States seem to have the least amount of responses, while the outside of the United States seem to have more responses.
+2. The inner part of the United States seem to have the least amount of responses, while the boundaries of the United States seem to have more responses.
+3. North Dakota had the least number of mental health facilities that responded with only 34.
