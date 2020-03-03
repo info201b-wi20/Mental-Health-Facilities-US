@@ -103,8 +103,8 @@ library(dplyr)
 # provided at the various facility or not, whether they provide sign language,
 # other languages, whether they have regularly scheduled quality inspections,
 # and whether they keep up with patients after discharge)
-summary_table <-
-  read.csv("../Data/mental_health_data.csv", stringsAsFactors = FALSE) %>%
+summary_table <- function(df) {
+  df %>%
   select(
     LST,
     MHDIAGEVAL,
@@ -195,7 +195,7 @@ summary_table <-
       sum(Regularly_scheduled_quality_reviews == "Yes", na.rm = TRUE),
     Regularly_followup_after_discharge =
       sum(Regularly_followup_after_discharge == "Yes", na.rm = TRUE)
-  )
+  )}
 
 # Table of summary significance:
 # Through this table we are able to see by state how each state compare 
