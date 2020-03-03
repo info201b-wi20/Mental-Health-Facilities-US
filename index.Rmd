@@ -3,14 +3,14 @@ title: "Mental Health Matters"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-source("Scripts/calculate_Summary_info.R")
-source("Scripts/first_chart.R")
-source("Scripts/second_chart.R")
-source("Scripts/third_chart.R")
-source("Scripts/table_of_summary.R")
 library(knitr)
+source("Scripts/calculate_summary_info.R"),
+source("Scripts/first_chart.R"),
+source("Scripts/second_chart.R"),
+source("Scripts/third_chart.R"),
+source("Scripts/table_of_summary.R")
 ```
 
 # **The Importance of Mental Health**
@@ -26,15 +26,18 @@ Out of all health facilities across the United States, **`r list_summary$total`*
 ***
 
 ## US Mental Health Summary Table
+
+A summary table was created to parse the most relevant information related to mental health treatments from all the mental health facilities across the United States. It clearly includes and sorts the most important information from the entire data set. The table is sorted in alphabetical order of the 50 states and US territories so viewers can easily find information and statistics on the mental health facilities and resources provided by a particular state or US territory.
+
 ``` {r echo = FALSE}
-knitr::kable(Data/mental_health_summary_table, format = "markdown")
+knitr::kable(mental_health_resources, format = "markdown")
 ```
 
-Some of the most helpful **insights** within this US Mental Health Summary Statistics Table:
+Most helpful **insights** within this US Mental Health Summary Statistics Table:
 
 1. The health facilities included within the data isn't limited to the 50 states but also includes Washington D.C. and other US Territories as separate data statistics.
 2. California, which has the highest population among the states, has the highest number of mental health facilities that provides sign language and languages other than English.
-3. In Washington state, there are 327 mental health facilities available. Of these mental health facilities, 239 facilities provided sign language and 286 provided languages other than English to better cater to a more diverse demographic.
+3. In **Washington** state, there are 327 mental health facilities available. Of these mental health facilities, 239 facilities provided sign language and 286 provided languages other than English to better cater to a more diverse demographic.
 
 ***
 
