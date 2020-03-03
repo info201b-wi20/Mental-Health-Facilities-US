@@ -210,4 +210,4 @@ summary_table <-
 # services, whether facilities provide languages other than English,
 # whether facilities have regularly scheduled quality reviews from committees,
 # and whether facilities have regular followups for patients after 
-# their discharge.
+# their discharge
