@@ -54,7 +54,7 @@ Important Observations:
 
 
 ```{r}
-data <- read.csv("Data/mental_health_data.csv")
+data <- read.csv("Data/mental_health_summary_table.csv")
 sign_language_data(data)
 ```
 
