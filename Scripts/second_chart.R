@@ -26,4 +26,3 @@ sign_language_data <- function(df) {
     y = "Amount of Institutions"
   )
 }
-ggplotly(sign_language_data)
