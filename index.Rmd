@@ -3,8 +3,6 @@ title: "Mental Health Matters"
 output: html_document
 ---
 
-<<<<<<< HEAD
-
 
 ```{r echo = FALSE, message = FALSE, results = FALSE}
 library(knitr)
@@ -13,29 +11,19 @@ source("./first_chart.R")
 source("./second_chart.R")
 source("./third_chart.R")
 source("./table_of_summary.R")
-=======
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(knitr)
-source("Scripts/calculate_summary_info.R"),
-source("Scripts/first_chart.R"),
-source("Scripts/second_chart.R"),
-source("Scripts/third_chart.R"),
-source("Scripts/table_of_summary.R")
->>>>>>> 4c8d22156de42de1167fa054b02a5e7f1a7b884a
-```
+
 
 # **The Importance of Mental Health**
 
 Mental health is a huge topic that has consistently been overlooked despite how widespread and non-discriminatory the issue of mental health disorders is. Mental illnesses affects millions of individuals with diverse backgrounds but the world has largely failed to treat mental health disorders as seriously as physical illnesses. Unfortunately, there is also a lack of treatment and information for many mental health disorders in a multitude of countries. The data set we are analyzing concerns statistics about the health facilities with mental health resources within the _United States_ only. We are interested in seeing the different amounts of mental health resources being offered across the country as well as what sort of services these health facilities provide and how inclusive they are in treating mental health disorders across the spectrum.
 
-***
+
 
 ## Overview of US Mental Health Facilities
 
 Out of all health facilities across the United States, **`r list_summary$total`** of those facilities offer mental health services and resources. All of these facilities that had mental health services conducted diagnostic tests for a range of mental illnesses. Of these, **`r list_summary$followups`%** took the time and effort to do followup checkups on patients that were diagnosed from the tests -- whether that was to set up a followup appointment or link those individuals to other professional mental health resources. It was also very interesting seeing what facilities took into account people with sensory impairments. Approximately **`r list_summary$sign_language`%** of the facilities offering mental health facilities implement the use of sign language to better treat individuals with hearing disabilities. The state with the most resources was _`r list_summary$most_resources`_ which isn't surprising as _California_ has the largest population among the American states. In _Washington_ state, **`r list_summary$washington`** health facilities provided mental health services.
 
-***
+
 
 ## US Mental Health Summary Table
 
