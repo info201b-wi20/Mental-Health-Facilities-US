@@ -3,9 +3,6 @@ title: "Mental Health Matters"
 output: html_document
 ---
 
-<<<<<<< HEAD
-
-
 ```{r echo = FALSE, message = FALSE, results = FALSE}
 library(knitr)
 source("./calculate_Summary_info.R")
@@ -13,16 +10,6 @@ source("./first_chart.R")
 source("./second_chart.R")
 source("./third_chart.R")
 source("./table_of_summary.R")
-=======
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(knitr)
-source("Scripts/calculate_summary_info.R"),
-source("Scripts/first_chart.R"),
-source("Scripts/second_chart.R"),
-source("Scripts/third_chart.R"),
-source("Scripts/table_of_summary.R")
->>>>>>> 4c8d22156de42de1167fa054b02a5e7f1a7b884a
 ```
 
 # **The Importance of Mental Health**
