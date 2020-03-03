@@ -43,7 +43,7 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
 source("Scripts/first_chart.R")
-render_first_chart(data)
+state_vs_diagnostics_barchart(data)
 ```
 
 Purpose:
@@ -59,7 +59,7 @@ Important Observations:
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
 source("Scripts/second_chart.R")
-render_second_chart(data)
+sign_language_data(data)
 ```
 
 Purpose: 
