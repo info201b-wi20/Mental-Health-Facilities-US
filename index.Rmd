@@ -48,9 +48,12 @@ render_first_chart(data)
 ```
 
 Purpose:
-
+Mental health diagnostics is extremely important and useful for identifying which mental illness a patient could have. Although mental health diagnostics can also be provided in places that are not treatment facilities, it is very convenient if both the diagnosis and treatment can be provided in the same place. So knowing how many facilities provide mental health diagnostics would be very useful for people to know.
 
 Important Observations:
+1. The state with the most amount of facilities that provides mental health diagnostics is California, with 788 facilities.
+2. The state with the least amount of facilities that provides mental health diagnostics is North Dakota, with 32 facilities.
+3. Most of the states have below 400 facilities that provides mental health diagnostics.
 
 ***
 
