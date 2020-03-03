@@ -105,104 +105,105 @@ library(dplyr)
 # and whether they keep up with patients after discharge)
 summary_table <- function(df) {
   df %>%
-  select(
-    LST,
-    MHDIAGEVAL,
-    FACILITYTYPE,
-    FOCUS,
-    OWNERSHP,
-    NOTREAT,
-    SIGNLANG,
-    LANG,
-    QUALREV,
-    OUTFUP
-  ) %>%
-  within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
-  within(FACILITYTYPE <- factor(FACILITYTYPE, labels = c(
-    "Psychiatric hospital",
-    "Separate inpatient psychiatric unit of a general hospital",
-    "Residential treatment center for children",
-    "Residential treatment center for adults",
-    "Other type of residential treatment facility",
-    "Veterans Administration medical center (VAMC)",
-    "Community mental health center (CMHC)",
-    "Partial hospitalization/day treatment facility",
-    "Outpatient mental health facility",
-    "Multi-setting mental health facility",
-    "Other"
-  ))) %>%
-  within(FOCUS <- factor(FOCUS, labels = c(
-    "Mental health treatment",
-    "Mix of mental health and substance abuse treatment",
-    "General health care",
-    "Other service focus"
-  ))) %>%
-  within(OWNERSHP <- factor(OWNERSHP, labels = c(
-    "Private for-profit organization",
-    "Private non-profit organization",
-    "Public agency or department"
-  ))) %>%
-  within(NOTREAT <- factor(NOTREAT, labels = c(
-    "NA",
-    "No",
-    "Yes"
-  ))) %>%
-  within(SIGNLANG <- factor(SIGNLANG, labels = c(
-    "NA",
-    "No",
-    "Yes"
-  ))) %>%
-  within(LANG <- factor(LANG, labels = c(
-    "NA",
-    "No",
-    "Yes"
-  ))) %>%
-  within(QUALREV <- factor(QUALREV, labels = c(
-    "NA",
-    "No",
-    "Yes"
-  ))) %>%
-  within(OUTFUP <- factor(OUTFUP, labels = c(
-    "NA",
-    "No",
-    "Yes"
-  ))) %>%
-  rename(
-    "State" = LST,
-    "Offer_diagnostic_evaluations" = MHDIAGEVAL,
-    "Facility" = FACILITYTYPE,
-    "Primary_treatment_focus" = FOCUS,
-    "Organization_type" = OWNERSHP,
-    "NO_identified_mental_health_treatment_approaches" = NOTREAT,
-    "Provides_sign_language" = SIGNLANG,
-    "Provides_languages_other_than_English" = LANG,
-    "Regularly_scheduled_quality_reviews" = QUALREV,
-    "Regularly_followup_after_discharge" = OUTFUP
-  ) %>%
-  group_by(State) %>%
-  summarize(
-    Offer_diagnostic_evaluations =
-      sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
-    NO_identified_mental_health_treatment_approaches =
-      sum(NO_identified_mental_health_treatment_approaches == "Yes",
+    select(
+      LST,
+      MHDIAGEVAL,
+      FACILITYTYPE,
+      FOCUS,
+      OWNERSHP,
+      NOTREAT,
+      SIGNLANG,
+      LANG,
+      QUALREV,
+      OUTFUP
+    ) %>%
+    within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
+    within(FACILITYTYPE <- factor(FACILITYTYPE, labels = c(
+      "Psychiatric hospital",
+      "Separate inpatient psychiatric unit of a general hospital",
+      "Residential treatment center for children",
+      "Residential treatment center for adults",
+      "Other type of residential treatment facility",
+      "Veterans Administration medical center (VAMC)",
+      "Community mental health center (CMHC)",
+      "Partial hospitalization/day treatment facility",
+      "Outpatient mental health facility",
+      "Multi-setting mental health facility",
+      "Other"
+    ))) %>%
+    within(FOCUS <- factor(FOCUS, labels = c(
+      "Mental health treatment",
+      "Mix of mental health and substance abuse treatment",
+      "General health care",
+      "Other service focus"
+    ))) %>%
+    within(OWNERSHP <- factor(OWNERSHP, labels = c(
+      "Private for-profit organization",
+      "Private non-profit organization",
+      "Public agency or department"
+    ))) %>%
+    within(NOTREAT <- factor(NOTREAT, labels = c(
+      "NA",
+      "No",
+      "Yes"
+    ))) %>%
+    within(SIGNLANG <- factor(SIGNLANG, labels = c(
+      "NA",
+      "No",
+      "Yes"
+    ))) %>%
+    within(LANG <- factor(LANG, labels = c(
+      "NA",
+      "No",
+      "Yes"
+    ))) %>%
+    within(QUALREV <- factor(QUALREV, labels = c(
+      "NA",
+      "No",
+      "Yes"
+    ))) %>%
+    within(OUTFUP <- factor(OUTFUP, labels = c(
+      "NA",
+      "No",
+      "Yes"
+    ))) %>%
+    rename(
+      "State" = LST,
+      "Offer_diagnostic_evaluations" = MHDIAGEVAL,
+      "Facility" = FACILITYTYPE,
+      "Primary_treatment_focus" = FOCUS,
+      "Organization_type" = OWNERSHP,
+      "NO_identified_mental_health_treatment_approaches" = NOTREAT,
+      "Provides_sign_language" = SIGNLANG,
+      "Provides_languages_other_than_English" = LANG,
+      "Regularly_scheduled_quality_reviews" = QUALREV,
+      "Regularly_followup_after_discharge" = OUTFUP
+    ) %>%
+    group_by(State) %>%
+    summarize(
+      Offer_diagnostic_evaluations =
+        sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE),
+      NO_identified_mental_health_treatment_approaches =
+        sum(NO_identified_mental_health_treatment_approaches == "Yes",
           na.rm = TRUE
-      ),
-    Provides_sign_language =
-      sum(Provides_sign_language == "Yes", na.rm = TRUE),
-    Provides_languages_other_than_English =
-      sum(Provides_languages_other_than_English == "Yes", na.rm = TRUE),
-    Regularly_scheduled_quality_reviews =
-      sum(Regularly_scheduled_quality_reviews == "Yes", na.rm = TRUE),
-    Regularly_followup_after_discharge =
-      sum(Regularly_followup_after_discharge == "Yes", na.rm = TRUE)
-  )}
+        ),
+      Provides_sign_language =
+        sum(Provides_sign_language == "Yes", na.rm = TRUE),
+      Provides_languages_other_than_English =
+        sum(Provides_languages_other_than_English == "Yes", na.rm = TRUE),
+      Regularly_scheduled_quality_reviews =
+        sum(Regularly_scheduled_quality_reviews == "Yes", na.rm = TRUE),
+      Regularly_followup_after_discharge =
+        sum(Regularly_followup_after_discharge == "Yes", na.rm = TRUE)
+    )
+}
 
 # Table of summary significance:
-# Through this table we are able to see by state how each state compare 
+# Through this table we are able to see by state how each state compare
 # to eachother in terms of whether facilities offer diagnostic evaluations
 # for mental health patients, whether facilities have any identified mental
 # health treatment approaches or not, whether facilities provid sign language
 # services, whether facilities provide languages other than English,
 # whether facilities have regularly scheduled quality reviews from committees,
-# and whether facilities have regular followups for patients after 
+# and whether facilities have regular followups for patients after
 # their discharge

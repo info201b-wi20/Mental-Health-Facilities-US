@@ -19,25 +19,26 @@ library(plotly)
 # Intentional chart type and encoding selection based on the
 # question of interest and data type
 
-state_vs_diagnostics_barchart <- function(df) { 
+state_vs_diagnostics_barchart <- function(df) {
   ggplotly(
-  df %>%
-    select(LST, MHDIAGEVAL) %>%
-    within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
-    rename(
-      "Offer_diagnostic_evaluations" = MHDIAGEVAL,
-      "State" = LST
-    ) %>%
-    group_by(State) %>%
-    summarize(
-      Offer_diagnostic_evaluations =
-        sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE)
-    ) %>%
-    ggplot(aes(x = State, y = Offer_diagnostic_evaluations)) +
-    geom_bar(stat = "identity") +
-    labs(
-      y = "Count of facilities providing mental health diagnostics",
-      x = "State",
-      title = "Count of facility providing mental health diagnostics by State"
-    )
-)}
+    df %>%
+      select(LST, MHDIAGEVAL) %>%
+      within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
+      rename(
+        "Offer_diagnostic_evaluations" = MHDIAGEVAL,
+        "State" = LST
+      ) %>%
+      group_by(State) %>%
+      summarize(
+        Offer_diagnostic_evaluations =
+          sum(Offer_diagnostic_evaluations == "Yes", na.rm = TRUE)
+      ) %>%
+      ggplot(aes(x = State, y = Offer_diagnostic_evaluations)) +
+      geom_bar(stat = "identity") +
+      labs(
+        y = "Count of facilities providing mental health diagnostics",
+        x = "State",
+        title = "Count of facility providing mental health diagnostics by State"
+      )
+  )
+}

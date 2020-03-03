@@ -1,5 +1,6 @@
 # Summary Information Script (Sophia's part)
-# The first file you should save in your scripts/ directory should contain a function that takes in a dataset as a parameter,
+# The first file you should save in your scripts/ directory should contain a
+# function that takes in a dataset as a parameter,
 # and returns a list of information about it. For example:
 
 rm(list = ls())
