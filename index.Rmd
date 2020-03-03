@@ -35,7 +35,7 @@ kable(mental_health_resources, format = "markdown")
 
 Most helpful **insights** within this US Mental Health Summary Statistics Table:
 
-1. The health facilities included within the data isn't limited to the 50 states but also includes Washington D.C. and other US Territories as separate data statistics.
+1. The health facilities included within the data isn't limited to the 50 states but also includes Washington D.C. and other US Territories as separate data statistics, where "ZZ" represents the Territories in the State column.
 2. California, which has the highest population among the states, has the highest number of mental health facilities that provides sign language and languages other than English.
 3. In **Washington** state, there are 327 mental health facilities available. Of these mental health facilities, 239 facilities provided sign language and 286 provided languages other than English to better cater to a more diverse demographic.
 
