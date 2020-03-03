@@ -49,6 +49,7 @@ render_first_chart(data)
 
 Purpose:
 
+
 Important Observations:
 
 ***
@@ -59,9 +60,13 @@ source("Scripts/second_chart.R")
 render_second_chart(data)
 ```
 
-Purpose:
+Purpose: 
+The purpose of this chart is that we wanted to find out how many institutions per  state had sign language as part of their service. There are a lot of victims of mental illness that are deaf/hard of hearing. Some of their mental health issues could have also stemmed from the fact that they are deaf/hard of hearing. So knowing how many institutions  provides sign language would be very helpful for people that needs it to communicate.
 
-Important Observations:
+Important Observations: 
+1. The state that provides the most institutions with sign language is California, with 439 institutions.
+2. The state with the least amount of institutions that provides sign language is Wyoming at only 16 institutions.
+3. Most states have between 20 - 250 institutions that provide sign language.
 
 ***
 
