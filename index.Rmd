@@ -10,6 +10,7 @@ source("Scripts/first_chart.R")
 source("Scripts/second_chart.R")
 source("Scripts/third_chart.R")
 source("Scripts/table_of_summary.R")
+data <- read.csv("Data/mental_health_data.csv", stringsAsFactors = F)
 ```
 
 # **The Importance of Mental Health**
@@ -29,7 +30,7 @@ Out of all health facilities across the United States, **`r list_summary$total`*
 A summary table was created to parse the most relevant information related to mental health treatments from all the mental health facilities across the United States. It clearly includes and sorts the most important information from the entire data set. The table is sorted in alphabetical order of the 50 states and US territories so viewers can easily find information and statistics on the mental health facilities and resources provided by a particular state or US territory.
 
 ``` {r echo = FALSE}
-knitr::kable(mental_health_resources, format = "markdown")
+kable(mental_health_resources, format = "markdown")
 ```
 
 Most helpful **insights** within this US Mental Health Summary Statistics Table:
@@ -45,7 +46,6 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 Mental health diagnostics is extremely important and useful for identifying which mental illness a patient could have. Therefore, a barchart was found to be most appropriate in showing this visualization. Although mental health diagnostics can also be provided in places that are not treatment facilities, it is very convenient if both the diagnosis and treatment can be provided in the same place. So knowing how many facilities provide mental health diagnostics would be very useful for people to know.
 
 ```{r echo = FALSE}
-data <- read.csv("Data/mental_health_data.csv")
 state_vs_diagnostics_barchart(data)
 ```
 
@@ -62,8 +62,9 @@ Important Observations:
 There are a lot of victims of mental illness that are deaf/hard of hearing. Some of their mental health issues could have also stemmed from the fact that they are deaf/hard of hearing. This scatterplot allows clear representation of the amount of resources for individuals with hearing impairments across different states. So knowing how many institutions provide sign language in every state would be very helpful for people that needs it to communicate.
 
 ```{r echo = FALSE}
-data <- read.csv("Data/mental_health_summary_table.csv")
-sign_language_data(data)
+summary_data <-
+  read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
+sign_language_data(summary_data)
 ```
 
 Important Observations: 
@@ -79,7 +80,6 @@ Important Observations:
 Knowing how many facilities actually responded to the survey is good to know because it gives a good general sense of which facilities are transparent in the information they give out and shows which facilities are underreporting what services they provide. This heat map of the US shows the number of facilities that offer mental health diagnosis across the different states. This information can be utilized to help give potential patients a sense of trust and aid their decision of which state they would want to go to for treatment based on the services the facilities say they provide.
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE}
-data <- read.csv("Data/mental_health_data.csv")
 render_third_chart(data)
 ```
 
