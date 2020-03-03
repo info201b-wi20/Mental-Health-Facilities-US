@@ -1,9 +1,4 @@
-library(styler)
-library(lintr)
 library(dplyr)
-
-style_file("table_of_summary.R")
-lint("table_of_summary.R")
 
 # NOTE TO SAASHA: The raw data file has all their column names in all CAPS,
 # not in stake_case. There are lintr errors that will be thrown due to this.

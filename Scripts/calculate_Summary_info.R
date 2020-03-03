@@ -9,7 +9,7 @@ library(lintr)
 library(dplyr)
 
 # Accessed the Mental Health Summary Table from the Data folder!
-mental_health_resources <- read.csv("../Data/mental_health_summary_table.csv",
+mental_health_resources <- read.csv("Data/mental_health_summary_table.csv",
   stringsAsFactors = FALSE
 )
 

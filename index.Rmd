@@ -5,24 +5,24 @@ output: html_document
 
 ```{r echo = FALSE, message = FALSE, results = FALSE}
 library(knitr)
-source("./calculate_Summary_info.R")
-source("./first_chart.R")
-source("./second_chart.R")
-source("./third_chart.R")
-source("./table_of_summary.R")
+source("Scripts/calculate_summary_info.R")
+source("Scripts/first_chart.R")
+source("Scripts/second_chart.R")
+source("Scripts/third_chart.R")
+source("Scripts/table_of_summary.R")
 ```
 
 # **The Importance of Mental Health**
 
 Mental health is a huge topic that has consistently been overlooked despite how widespread and non-discriminatory the issue of mental health disorders is. Mental illnesses affects millions of individuals with diverse backgrounds but the world has largely failed to treat mental health disorders as seriously as physical illnesses. Unfortunately, there is also a lack of treatment and information for many mental health disorders in a multitude of countries. The data set we are analyzing concerns statistics about the health facilities with mental health resources within the _United States_ only. We are interested in seeing the different amounts of mental health resources being offered across the country as well as what sort of services these health facilities provide and how inclusive they are in treating mental health disorders across the spectrum.
 
-***
+
 
 ## Overview of US Mental Health Facilities
 
 Out of all health facilities across the United States, **`r list_summary$total`** of those facilities offer mental health services and resources. All of these facilities that had mental health services conducted diagnostic tests for a range of mental illnesses. Of these, **`r list_summary$followups`%** took the time and effort to do followup checkups on patients that were diagnosed from the tests -- whether that was to set up a followup appointment or link those individuals to other professional mental health resources. It was also very interesting seeing what facilities took into account people with sensory impairments. Approximately **`r list_summary$sign_language`%** of the facilities offering mental health facilities implement the use of sign language to better treat individuals with hearing disabilities. The state with the most resources was _`r list_summary$most_resources`_ which isn't surprising as _California_ has the largest population among the American states. In _Washington_ state, **`r list_summary$washington`** health facilities provided mental health services.
 
-***
+
 
 ## US Mental Health Summary Table
 
@@ -38,15 +38,10 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 2. California, which has the highest population among the states, has the highest number of mental health facilities that provides sign language and languages other than English.
 3. In **Washington** state, there are 327 mental health facilities available. Of these mental health facilities, 239 facilities provided sign language and 286 provided languages other than English to better cater to a more diverse demographic.
 
-***
-
-- Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
-- In order to render this information, you'll need to read in your data in (only) your index.Rmd file, and pass your data to the functions provided in each script. If it isn't clear how to these pieces fit together, reach out to your TA.
 
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
-source("Scripts/first_chart.R")
-render_first_chart(data)
+state_vs_diagnostics_barchart(data)
 ```
 
 Purpose:
@@ -57,12 +52,10 @@ Important Observations:
 2. The state with the least amount of facilities that provides mental health diagnostics is North Dakota, with 32 facilities.
 3. Most of the states have below 400 facilities that provides mental health diagnostics.
 
-***
 
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
-source("Scripts/second_chart.R")
-render_second_chart(data)
+sign_language_data(data)
 ```
 
 Purpose: 
@@ -73,11 +66,9 @@ Important Observations:
 2. The state with the least amount of institutions that provides sign language is Wyoming at only 16 institutions.
 3. Most states have between 20 - 250 institutions that provide sign language.
 
-***
 
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
-source("Scripts/third_chart.R")
 render_third_chart(data)
 ```
 
