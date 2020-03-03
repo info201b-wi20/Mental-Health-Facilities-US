@@ -3,10 +3,9 @@ title: "Mental Health Matters"
 output: html_document
 ---
 
-
 ```{r echo = FALSE, message = FALSE, results = FALSE}
 library(knitr)
-source("Scripts/calculate_Summary_info.R")
+source("Scripts/calculate_summary_info.R")
 source("Scripts/first_chart.R")
 source("Scripts/second_chart.R")
 source("Scripts/third_chart.R")
