@@ -40,9 +40,6 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 
 ***
 
-- Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
-- In order to render this information, you'll need to read in your data in (only) your index.Rmd file, and pass your data to the functions provided in each script. If it isn't clear how to these pieces fit together, reach out to your TA.
-
 ```{r}
 data <- read.csv("Data/mental_health_data.csv")
 source("Scripts/first_chart.R")
