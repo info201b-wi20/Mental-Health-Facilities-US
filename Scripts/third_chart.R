@@ -42,10 +42,10 @@ render_third_chart <- function(df) {
     summarize(responses = n()) %>%
     mutate(region = abbr_to_state(LST))
   df <- left_join(map_data("state"), df, by = "region")
-  ggplot(df, aes(long, lat, group = group)) +
+  ggplotly(ggplot(df, aes(long, lat, group = group)) +
     geom_polygon(aes(fill = responses), color = "white") +
     scale_fill_viridis_c(option = "D") +
     theme_void() +
     theme(plot.margin = unit(c(1, 1, 1, 1), "cm")) +
-    ggtitle("Number of Responses per State")
+    ggtitle("Number of Responses per State"))
 }

@@ -17,12 +17,12 @@ library(plotly)
 # This is all inside of the data folder
 
 sign_language_data <- function(df) {
-  ggplot(data = df) + 
+  ggplotly(ggplot(data = df) + 
     geom_point(mapping = aes(x = State, y = Provides_sign_language)) +
   
   labs(
     title = "Amount of Institutions Per State That Provides Sign Language",
     x = "States",
     y = "Amount of Institutions"
-  )
+  ))
 }
