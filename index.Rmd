@@ -82,5 +82,8 @@ render_third_chart(data)
 ```
 
 Purpose:
+Knowing how many facilities actually responded to the survey is good to know because it gives a good general sense of which facilities are transparent in the information they give out and shows which facilities are underreporting what services they provide. Knowing this information can also help give potential patients a sense of trust and help them decide which state they would want to go to for treatment based on the services the facilities say they provide.
 
 Important Observations:
+1. California and New York are the states that gave the most responses, at over 800 responses.
+2. The inner part of the United States seem to have the least amount of responses, while the outside of the United States seem to have more responses.
