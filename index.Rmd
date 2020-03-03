@@ -10,6 +10,7 @@ source("Scripts/first_chart.R")
 source("Scripts/second_chart.R")
 source("Scripts/third_chart.R")
 source("Scripts/table_of_summary.R")
+data <- read.csv("Data/mental_health_data.csv", stringsAsFactors = F)
 ```
 
 # **The Importance of Mental Health**
@@ -29,7 +30,7 @@ Out of all health facilities across the United States, **`r list_summary$total`*
 A summary table was created to parse the most relevant information related to mental health treatments from all the mental health facilities across the United States. It clearly includes and sorts the most important information from the entire data set. The table is sorted in alphabetical order of the 50 states and US territories so viewers can easily find information and statistics on the mental health facilities and resources provided by a particular state or US territory.
 
 ``` {r echo = FALSE}
-knitr::kable(mental_health_resources, format = "markdown")
+kable(mental_health_resources, format = "markdown")
 ```
 
 Most helpful **insights** within this US Mental Health Summary Statistics Table:
@@ -40,7 +41,6 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 
 
 ```{r}
-data <- read.csv("Data/mental_health_data.csv")
 state_vs_diagnostics_barchart(data)
 ```
 
@@ -54,8 +54,8 @@ Important Observations:
 
 
 ```{r}
-data <- read.csv("Data/mental_health_summary_table.csv")
-sign_language_data(data)
+summary_data <- read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
+sign_language_data(summary_data)
 ```
 
 Purpose: 
@@ -68,7 +68,6 @@ Important Observations:
 
 
 ```{r}
-data <- read.csv("Data/mental_health_data.csv")
 render_third_chart(data)
 ```
 
