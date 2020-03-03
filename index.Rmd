@@ -54,7 +54,8 @@ Important Observations:
 
 
 ```{r}
-summary_data <- read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
+summary_data <- read.csv("Data/mental_health_summary_table.csv",
+                         stringsAsFactors = F)
 sign_language_data(summary_data)
 ```
 
