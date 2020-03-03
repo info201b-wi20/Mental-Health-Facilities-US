@@ -12,8 +12,8 @@
 # For each chart, we expect the following:
 
 # Proper labels/titles/legends
-# Intentional chart type and encoding selection based on the question of interest
-# and data type
+# Intentional chart type and encoding selection based on the question of
+# interest and data type
 
 library(dplyr)
 library(ggplot2)
