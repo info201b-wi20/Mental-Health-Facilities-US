@@ -1,11 +1,6 @@
-library(styler)
-library(lintr)
 library(dplyr)
 library(ggplot2)
 library(plotly)
-
-style_file("first_chart.R")
-lint("first_chart.R")
 
 # Chart Script(s) criteria: (Ann's part)
 # You should write functions that take in your dataset as a parameter,
@@ -24,8 +19,9 @@ lint("first_chart.R")
 # Intentional chart type and encoding selection based on the
 # question of interest and data type
 
-state_vs_diagnostics_barchart <- ggplotly(
-  read.csv("../Data/mental_health_data.csv", stringsAsFactors = FALSE) %>%
+state_vs_diagnostics_barchart <- function(df) { 
+  ggplotly(
+  df %>%
     select(LST, MHDIAGEVAL) %>%
     within(MHDIAGEVAL <- factor(MHDIAGEVAL, labels = c("No", "Yes"))) %>%
     rename(
@@ -44,4 +40,4 @@ state_vs_diagnostics_barchart <- ggplotly(
       x = "State",
       title = "Count of facility providing mental health diagnostics by State"
     )
-)
+)}
