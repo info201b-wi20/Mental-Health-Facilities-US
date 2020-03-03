@@ -5,11 +5,11 @@ output: html_document
 
 ```{r echo = FALSE, message = FALSE, results = FALSE}
 library(knitr)
-source("./calculate_Summary_info.R")
-source("./first_chart.R")
-source("./second_chart.R")
-source("./third_chart.R")
-source("./table_of_summary.R")
+source("Scripts/calculate_Summary_info.R")
+source("Scripts/first_chart.R")
+source("Scripts/second_chart.R")
+source("Scripts/third_chart.R")
+source("Scripts/table_of_summary.R")
 ```
 
 # **The Importance of Mental Health**
