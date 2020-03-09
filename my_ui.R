@@ -16,7 +16,29 @@ first_page <- tabPanel(
       h4("An Overview"),
       p("")
     )
-  )
+  ),
+  HTML("
+    <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
+    <style>
+      #chocolate {
+        animation: footer 10s infinite ease-out;
+        width: 100px;
+        position: fixed;
+        bottom: 16px;
+      }
+      
+      @keyframes footer {
+        0%, 10%, 90%, 100% {
+          margin-left: 8px;
+          transform: rotate(0deg) rotateY(0deg);
+        }
+        40%, 60% {
+          margin-left: calc(100% - 108px);
+          transform: rotate(720deg) rotateY(360deg);
+        }
+      }
+    </style>
+  ")
 )
 
 #############################_1st Graph_######################################
@@ -62,7 +84,7 @@ fourth_page <- tabPanel(
     sidebarPanel(),
     mainPanel(
       h4("Responses from Mental Health Facilities Across the US"),
-      plotOutput("third_chart")
+      plotlyOutput("third_chart")
     )
   )
 )
@@ -88,27 +110,5 @@ my_ui <- navbarPage(
   second_page, 
   third_page, 
   fourth_page,
-  fifth_page,
-  footer = HTML("
-    <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
-    <style>
-      #chocolate {
-        animation: footer 10s infinite ease-out;
-        width: 100px;
-        position: fixed;
-        bottom: 16px;
-      }
-      
-      @keyframes footer {
-        0%, 10%, 90%, 100% {
-          margin-left: 8px;
-          transform: rotate(0deg) rotateY(0deg);
-        }
-        40%, 60% {
-          margin-left: calc(100% - 108px);
-          transform: rotate(720deg) rotateY(360deg);
-        }
-      }
-    </style>
-  ")
+  fifth_page
 )
