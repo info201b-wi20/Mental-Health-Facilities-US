@@ -9,12 +9,12 @@ library(plotly)
 # Pages for Shiny Application
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
-  "A",
+  "Mental Health Matters: An Overview",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4("A"),
-      plotlyOutput("firstChart")
+      h4("An Overview"),
+      p("")
     )
   )
 )
