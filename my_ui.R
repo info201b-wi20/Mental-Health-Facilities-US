@@ -3,45 +3,56 @@ library(lintr)
 library(dplyr)
 library(ggplot2)
 library(shiny)
+library(plotly)
 
+#############################_ui_#########################################
 # Pages for Shiny Application
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
-  "",
+  "A",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4(""),
-      plotOutput("")
+      h4("A"),
+      plotlyOutput("firstChart")
     )
   )
 )
+
+#############################_1st Graph_#########################################
+# 3 interactive pages that can be used to explore the data. Each page should revolve around a specific question
+# you have of your dataset. Each page should have sufficient interactivity (e.g., Shiny widgets + 1 or more reactive 
+# charts) for exploring the question of interest. If you would prefer to make fewer pages with more complexity, check 
+# with your TA/instructor.
 
 # Second Page: Barchart concerning States and Mental Health Diagnosis
 second_page <- tabPanel(
-  "",
+  "B",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4(""),
-      plotOutput("")
+      h4("B"),
+      plotlyOutput("secondChart")
     )
   )
 )
 
+#############################_2nd Graph_#########################################
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
 third_page <- tabPanel(
-  "",
+  "C",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4(""),
-      plotOutput("")
+      h4("C"),
+      plotlyOutput("thirdChart")
     )
   )
 )
 
+
+#############################_3rd Graph_#########################################
 # Fourth Page: Heat Map of Continental US that visualizes the number of
 # mental health facilities in each state
 fourth_page <- tabPanel(
@@ -68,6 +79,11 @@ fifth_page <- tabPanel(
   )
 )
 
+
+#############################_Takeaway Page_#########################################
+# Summary takeaways, a page that hones in on at least 3 major takeaways from the project (which should be related 
+# to a specific aspect of your analysis). Feel free to incorporate tables, graphics, or other elements to convey these
+# conclusions.'
 
 # Navigation Bar and Pages
 ui <- navbarPage(
