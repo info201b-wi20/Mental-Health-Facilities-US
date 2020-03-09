@@ -5,12 +5,9 @@ library(ggplot2)
 library(shiny)
 library(plotly)
 
-#############################_ui_#########################################
-ui <- navbarPage(
-  
-#############################_1st Graph_#########################################
+#############################_1st Graph_#######################################
 # 3 interactive pages that can be used to explore the data. Each page should revolve around a specific question
-# you have of your dataset. Each page should have sufficient interactivity (e.g., Shiny widgets + 1 or more reactive 
+# you have of your dataset. Each page should have sufficient interactivity (e.g., Shiny widgets + 1 or more reactive
 # charts) for exploring the question of interest. If you would prefer to make fewer pages with more complexity, check 
 # with your TA/instructor.
 
@@ -25,7 +22,7 @@ first_page <- tabPanel(
   )
 )
 
-#############################_2nd Graph_#########################################
+#############################_2nd Graph_#######################################
 second_page <- tabPanel(
   "B",
   sidebarLayout(
@@ -37,7 +34,7 @@ second_page <- tabPanel(
   )
 )
 
-#############################_3rd Graph_#########################################
+#############################_3rd Graph_#######################################
 third_page <- tabPanel(
   "C",
   sidebarLayout(
@@ -48,7 +45,6 @@ third_page <- tabPanel(
     )
   )
 )
-
 
 #############################_Takeaway Page_#########################################
 # Summary takeaways, a page that hones in on at least 3 major takeaways from the project (which should be related 
