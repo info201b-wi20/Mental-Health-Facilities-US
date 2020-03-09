@@ -3,35 +3,51 @@ library(lintr)
 library(dplyr)
 library(ggplot2)
 library(shiny)
+library(plotly)
 
-#############################_First Page_#########################################
-# A single page providing an overview of the project -- what major questions are you seeking to answer, and 
-# what data will you use to answer those questions? You should include some "additional flare" on this landing page, 
-# such as an image.
-
-first_page <- tabPanel(
-  "",
-  sidebarLayout(
-    sidebarPanel(),
-    mainPanel(
-      h4(""),
-      plotOutput("")
-    )
-  )
-)
-
+#############################_ui_#########################################
+ui <- navbarPage(
+  
 #############################_1st Graph_#########################################
 # 3 interactive pages that can be used to explore the data. Each page should revolve around a specific question
 # you have of your dataset. Each page should have sufficient interactivity (e.g., Shiny widgets + 1 or more reactive 
 # charts) for exploring the question of interest. If you would prefer to make fewer pages with more complexity, check 
 # with your TA/instructor.
 
+first_page <- tabPanel(
+  "A",
+  sidebarLayout(
+    sidebarPanel(),
+    mainPanel(
+      h4("A"),
+      plotlyOutput("firstChart")
+    )
+  )
+)
 
 #############################_2nd Graph_#########################################
-
-
+second_page <- tabPanel(
+  "B",
+  sidebarLayout(
+    sidebarPanel(),
+    mainPanel(
+      h4("B"),
+      plotlyOutput("secondChart")
+    )
+  )
+)
 
 #############################_3rd Graph_#########################################
+third_page <- tabPanel(
+  "C",
+  sidebarLayout(
+    sidebarPanel(),
+    mainPanel(
+      h4("C"),
+      plotlyOutput("thirdChart")
+    )
+  )
+)
 
 
 #############################_Takeaway Page_#########################################
@@ -39,9 +55,9 @@ first_page <- tabPanel(
 # to a specific aspect of your analysis). Feel free to incorporate tables, graphics, or other elements to convey these
 # conclusions.'
 
-
-#############################_ui_#########################################
-ui <- navbarPage(
+my_ui <- navbarPage(
   "Mental Health Facilities Across the US",
-  first_page
+  first_page,
+  second_page,
+  third_page
 )
