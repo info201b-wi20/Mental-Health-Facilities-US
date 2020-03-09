@@ -80,7 +80,7 @@ fifth_page <- tabPanel(
 )
 
 #############################_ui_#########################################
-ui <- navbarPage(
+my_ui <- navbarPage(
   "Mental Health Facilities Across the US",
   first_page, 
   second_page, 
