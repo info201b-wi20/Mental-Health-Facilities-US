@@ -15,7 +15,7 @@ shinyApp(ui = my_ui, server = my_server)
 # As mentioned above, you can dictate your own project structure and layout depending on the 
 # focus of your project and dimensions of your dataset(s). However, to help guide you, below 
 # is a basic structure that meets our expectations:
-  
+
 # 1. A single page providing an overview of the project -- what major questions are you seeking to answer, and 
 # what data will you use to answer those questions? You should include some "additional flare" on this landing page, 
 # such as an image.

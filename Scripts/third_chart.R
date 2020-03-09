@@ -19,34 +19,7 @@ library(dplyr)
 library(ggplot2)
 
 abbr_to_state <- function(abbreviation) {
-  data.frame(
-    abbr = c(
-      "AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE",
-      "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY",
-      "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT",
-      "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH",
-      "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX",
-      "UT", "VA", "VT", "WA", "WI", "WV", "WY", "ZZ"
-    ),
-    name = c(
-      "alaska", "alabama", "arkansas", "arizona", "california",
-      "colorado", "connecticut", "district of columbia",
-      "delaware", "florida", "georgia", "hawaii", "iowa",
-      "idaho", "illinois", "indiana", "kansas", "kentucky",
-      "louisiana", "massachusetts", "maryland", "maine",
-      "michigan", "minnesota", "missouri", "mississippi",
-      "montana", "north carolina", "north dakota", "nebraska",
-      "new hampshire", "new jersey", "new mexico", "nevada",
-      "new york", "ohio", "oklahoma", "oregon", "pennsylvania",
-      "puerto rico", "rhode island", "south carolina",
-      "south dakota", "tennessee", "texas", "utah", "virginia",
-      "vermont", "washington", "wisconsin", "west virginia",
-      "wyoming", "other"
-    )
-  ) %>%
-    filter(abbr == abbreviation) %>%
-    select(name) %>%
-    pull()
+  stringr::str_to_lower(setNames(state.name, state.abb)[abbreviation])
 }
 
 render_third_chart <- function(df) {
