@@ -13,13 +13,13 @@ summary_data <-
   read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
 
 my_server <- function(input, output) {
-  output$firstChart <- renderPlotly({
+  output$first_chart <- renderPlotly({
     state_vs_diagnostics_barchart(data)
   })
-  output$secondChart <- renderPlotly({
+  output$second_chart <- renderPlotly({
     sign_language_data(summary_data)
   })
-  output$thirdChart <- renderPlotly({
+  output$third_chart <- renderPlotly({
     render_third_chart(data)
   })
 }
