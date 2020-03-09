@@ -27,12 +27,12 @@ first_page <- tabPanel(
 
 # Second Page: Barchart concerning States and Mental Health Diagnosis
 second_page <- tabPanel(
-  "B",
+  "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4("B"),
-      plotlyOutput("secondChart")
+      h4("US States and Mental Health Diagnostic Testing"),
+      plotlyOutput("first_chart")
     )
   )
 )
@@ -41,26 +41,26 @@ second_page <- tabPanel(
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
 third_page <- tabPanel(
-  "C",
+  "Scatterplot: Sign Language Provided in Facilities",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4("C"),
-      plotlyOutput("thirdChart")
+      h4("Sign Language Provided Across State Facilities"),
+      plotlyOutput("second_chart")
     )
   )
 )
 
 #############################_3rd Graph_#######################################
 # Fourth Page: Heat Map of Continental US that visualizes the number of
-# mental health facilities in each state
+# mental health facilities that responded in each state
 fourth_page <- tabPanel(
-  "",
+  "Heat Map: Amount of Reviews for Mental Health Facilities",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4(""),
-      plotOutput("")
+      h4("Responses from Mental Health Facilities Across the US"),
+      plotOutput("third_chart")
     )
   )
 )
@@ -69,12 +69,11 @@ fourth_page <- tabPanel(
 # Fifth Page: Major Analysis Takeaways and Insights from the Charts
 # Let's do 1 insight per visualization
 fifth_page <- tabPanel(
-  "",
+  "Analysis and Key Takeaways",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4(""),
-      plotOutput("")
+      h4("Insights We Gained from US Mental Health Facilities Dataset"),
     )
   )
 )
