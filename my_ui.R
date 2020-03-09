@@ -9,21 +9,23 @@ library(plotly)
 # Pages for Shiny Application
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
-  "A",
+  "Mental Health Matters: An Overview",
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
-      h4("A"),
-      plotlyOutput("firstChart")
+      h4("An Overview"),
+      p("")
     )
   )
 )
 
 #############################_1st Graph_######################################
-# 3 interactive pages that can be used to explore the data. Each page should revolve around a specific question
-# you have of your dataset. Each page should have sufficient interactivity (e.g., Shiny widgets + 1 or more reactive 
-# charts) for exploring the question of interest. If you would prefer to make fewer pages with more complexity, check 
-# with your TA/instructor.
+# 3 interactive pages that can be used to explore the data. Each page should 
+# revolve around a specific question
+# you have of your dataset. Each page should have sufficient 
+# interactivity (e.g., Shiny widgets + 1 or more reactive 
+# charts) for exploring the question of interest. If you would 
+#prefer to make fewer pages with more complexity, check with your TA/instructor
 
 # Second Page: Barchart concerning States and Mental Health Diagnosis
 second_page <- tabPanel(
@@ -74,6 +76,7 @@ fifth_page <- tabPanel(
     sidebarPanel(),
     mainPanel(
       h4("Insights We Gained from US Mental Health Facilities Dataset"),
+      p()
     )
   )
 )
@@ -84,6 +87,28 @@ my_ui <- navbarPage(
   first_page, 
   second_page, 
   third_page, 
-  fourth_page, 
-  fifth_page
+  fourth_page,
+  fifth_page,
+  footer = HTML("
+    <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
+    <style>
+      #chocolate {
+        animation: footer 10s infinite ease-out;
+        width: 100px;
+        position: fixed;
+        bottom: 16px;
+      }
+      
+      @keyframes footer {
+        0%, 10%, 90%, 100% {
+          margin-left: 8px;
+          transform: rotate(0deg) rotateY(0deg);
+        }
+        40%, 60% {
+          margin-left: calc(100% - 108px);
+          transform: rotate(720deg) rotateY(360deg);
+        }
+      }
+    </style>
+  ")
 )
