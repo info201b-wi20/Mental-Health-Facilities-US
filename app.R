@@ -8,7 +8,7 @@ source("my_server.R")
 
 
 # Create a new `shinyApp()` using the loaded `ui` and `server` variables
-shinyApp(ui = ui, server = server)
+shinyApp(ui = my_ui, server = my_server)
 
 # Expectation:
 # Structure
