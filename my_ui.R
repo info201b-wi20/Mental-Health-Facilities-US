@@ -40,7 +40,6 @@ second_page <- tabPanel(
 #############################_2nd Graph_#######################################
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
->>>>>>> 6e30de5de599a9ec233810fedcddc5065e9549f7
 third_page <- tabPanel(
   "C",
   sidebarLayout(
@@ -51,9 +50,6 @@ third_page <- tabPanel(
     )
   )
 )
-
-<<<<<<< HEAD
-=======
 
 #############################_3rd Graph_#######################################
 # Fourth Page: Heat Map of Continental US that visualizes the number of
