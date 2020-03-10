@@ -34,5 +34,5 @@ render_third_chart <- function(df) {
     scale_fill_viridis_c(option = "D") +
     theme_void() +
     theme(plot.margin = unit(c(1, 1, 1, 1), "cm")) +
-    ggtitle("Number of Responses per State"))
+    ggtitle("Number of Responses per State"), width = 700, height = 400)
 }
