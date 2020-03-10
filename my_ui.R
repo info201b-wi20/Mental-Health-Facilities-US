@@ -79,6 +79,20 @@ third_page <- tabPanel(
   )
 )
 
+# Slider Input Widget for Scatterplot
+size_choice <- sliderInput("Size",
+  label = "Scatterplot Point Size",
+  min = 1, max = 12, value = 3
+)
+
+# Select from a List of Options for Bar Chart
+choosing_color <- selectInput(
+  "Color", label = "Color", choices = list("Red" = "red",
+  "Orange" = "orange", "Yellow" = "yellow", "Green" = "green",
+  "Blue" = "blue", "Purple" = "purple", "Black" = "black",
+  "Gray" = "gray", "Pink" = "magenta")
+)
+
 #############################_3rd Graph_#######################################
 # Fourth Page: Heat Map of Continental US that visualizes the number of
 # mental health facilities that responded in each state
