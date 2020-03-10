@@ -10,13 +10,10 @@ library(plotly)
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
   "Mental Health Matters: An Overview",
-  sidebarLayout(
-    sidebarPanel(),
     mainPanel(
       h4("An Overview"),
-      p("")
-    )
-  ),
+      p("here is a paragraph...")
+    ),
   # Makes Team Chocolate Logo :D
   HTML("
     <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
