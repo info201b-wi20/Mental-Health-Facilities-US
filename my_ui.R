@@ -17,6 +17,7 @@ first_page <- tabPanel(
       p("")
     )
   ),
+  # Makes Team Chocolate Logo :D
   HTML("
     <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
     <style>
@@ -71,7 +72,7 @@ second_page <- tabPanel(
 third_page <- tabPanel(
   "Scatterplot: Sign Language Provided in Facilities",
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(size_choice),
     mainPanel(
       h4("Sign Language Provided Across State Facilities"),
       plotlyOutput("second_chart")
@@ -80,17 +81,17 @@ third_page <- tabPanel(
 )
 
 # Slider Input Widget for Scatterplot
-size_choice <- sliderInput("Size",
+size_choice <- sliderInput(inputId = "point_size",
   label = "Scatterplot Point Size",
   min = 1, max = 12, value = 3
 )
 
 # Select from a List of Options for Bar Chart
 choosing_color <- selectInput(
-  "Color", label = "Color", choices = list("Red" = "red",
+  inputID = "color", label = "Color", choices = list("Red" = "red",
   "Orange" = "orange", "Yellow" = "yellow", "Green" = "green",
   "Blue" = "blue", "Purple" = "purple", "Black" = "black",
-  "Gray" = "gray", "Pink" = "magenta")
+  "Gray" = "gray", "Pink" = "magenta", "White" = "white")
 )
 
 #############################_3rd Graph_#######################################
@@ -128,5 +129,6 @@ my_ui <- navbarPage(
   second_page, 
   third_page, 
   fourth_page,
-  fifth_page
+  fifth_page,
+  theme = shinythemes::shinytheme("cerulean")
 )

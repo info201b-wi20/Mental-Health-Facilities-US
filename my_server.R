@@ -30,6 +30,7 @@ my_server <- function(input, output) {
   })
   output$second_chart <- renderPlotly({
     sign_language_data(summary_data)
+    
   })
   output$third_chart <- renderPlotly({
     render_third_chart(data)
