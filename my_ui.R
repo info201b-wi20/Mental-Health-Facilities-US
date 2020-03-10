@@ -23,7 +23,6 @@ first_page <- tabPanel(
       going to want the treatment that will suit them the best. But the
       best care might not be in the state that they reside in, so this
       project aims to answer a few major questions to give people a better
-<<<<<<< HEAD
       idea of where they might want to go to get the treatment they want:"
       , br(), br(), "1. Which states have the most amount of options in terms of
       facilities that operate there?"
@@ -32,8 +31,7 @@ first_page <- tabPanel(
       , br(), br(), "3. How many facilities per state actually took time to give 
       information about their facilities?"
       , br(), br(), "In order to answer these questions, as well as to learn more
-      about mental health facilities in different states,we used the data set 
-=======
+      about mental health facilities in different states,we used the data set
       idea of where they might want to go to get the treatment they want:",
       
       br(),
@@ -55,7 +53,6 @@ first_page <- tabPanel(
       
       "In order to answer these questions, as well as to learn more
       about mental health facilities in different states,we used the data set
->>>>>>> 48f302ae20f301d445cb240d2033b7592b677f5c
       made from the National Mental Health Services Survey 2018
       by the Substance Abuse & Mental Health Data Archive(SAMHDA):
       https://datafiles.samhsa.gov/study-dataset/national-mental
