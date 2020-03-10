@@ -54,7 +54,7 @@ first_page <- tabPanel(
 second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
-    sidebarPanel(choosing_color,
+    sidebarPanel(
       uiOutput(
         "input_first_chart_number"
       )
