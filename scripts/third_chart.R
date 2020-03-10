@@ -19,7 +19,8 @@ library(dplyr)
 library(ggplot2)
 
 abbr_to_state <- function(abbreviation) {
-  stringr::str_to_lower(setNames(state.name, state.abb)[abbreviation])
+  stringr::str_to_lower(setNames(append(state.name, c("Other")),
+                                 append(state.abb, c("ZZ")))[abbreviation])
 }
 
 render_third_chart <- function(df) {
