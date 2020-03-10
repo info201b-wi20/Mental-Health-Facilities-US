@@ -34,7 +34,7 @@ first_page <- tabPanel(
           transform: rotate(0deg) rotateY(0deg);
         }
         40%, 60% {
-          margin-left: calc(100% - 108px);
+          margin-left: calc(100% - 124px);
           transform: rotate(720deg) rotateY(360deg);
         }
       }
@@ -94,7 +94,8 @@ fourth_page <- tabPanel(
   "Heat Map: Amount of Reviews for Mental Health Facilities",
   sidebarLayout(
     sidebarPanel(
-      uiOutput("input_third_states")
+      uiOutput("input_third_states"),
+      uiOutput("input_third_num")
     ),
     mainPanel(
       h4("Responses from Mental Health Facilities Across the US"),

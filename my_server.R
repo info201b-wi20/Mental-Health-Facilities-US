@@ -15,6 +15,8 @@ summary_data <-
 min_offer_eval <- min(summary_data$Offer_diagnostic_evaluations, na.rm = TRUE)
 max_offer_eval <- max(summary_data$Offer_diagnostic_evaluations, na.rm = TRUE)
 
+num_responses <- data %>% group_by(LST) %>% summarize(num_responses = n())
+
 data_states <- lapply(
   lapply(data %>%
            select(LST) %>%
@@ -43,9 +45,15 @@ my_server <- function(input, output) {
   })
   
   output$third_chart <- renderPlotly({
+    states_to_show_by_number <- num_responses %>%
+      filter(num_responses >= input$state_slider_choice[1]) %>%
+      filter(num_responses <= input$state_slider_choice[2]) %>%
+      select(LST) %>%
+      pull()
     render_third_chart(data %>%
                          mutate(state_full = stringr::str_to_title(abbr_to_state(LST))) %>%
-                         filter(state_full %in% input$states_selected))
+                         filter(state_full %in% input$states_selected) %>%
+                         filter(LST %in% states_to_show_by_number))
   })
   
   output$input_third_states <- renderUI({
@@ -55,6 +63,17 @@ my_server <- function(input, output) {
       data_states,
       selected = data_states,
       multiple = T
+    )
+  })
+  
+  output$input_third_num <- renderUI({
+    sliderInput(
+      "state_slider_choice",
+      label = "Filter By Number of Responses",
+      min = min(num_responses$num_responses, na.rm = T),
+      max = max(num_responses$num_responses, na.rm = T),
+      value = c(min(num_responses$num_responses, na.rm = T),
+                max(num_responses$num_responses, na.rm = T))
     )
   })
 }
