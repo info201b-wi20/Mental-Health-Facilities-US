@@ -1,5 +1,3 @@
-library(styler)
-library(lintr)
 library(dplyr)
 library(ggplot2)
 library(shiny)
@@ -10,13 +8,10 @@ library(plotly)
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
   "Mental Health Matters: An Overview",
-  sidebarLayout(
-    sidebarPanel(),
     mainPanel(
       h4("An Overview"),
-      p("")
-    )
-  ),
+      p("here is a paragraph...")
+    ),
   # Makes Team Chocolate Logo :D
   HTML("
     <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
@@ -55,6 +50,7 @@ second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
     sidebarPanel(
+      # Sliding Input Widget for Diagnostics
       uiOutput(
         "input_first_chart_number"
       )
@@ -109,13 +105,10 @@ fourth_page <- tabPanel(
 # Let's do 1 insight per visualization
 fifth_page <- tabPanel(
   "Analysis and Key Takeaways",
-  sidebarLayout(
-    sidebarPanel(),
     mainPanel(
       h4("Insights We Gained from US Mental Health Facilities Dataset"),
-      p()
+      p("Here is a paragraph...")
     )
-  )
 )
 
 #############################_ui_#########################################
