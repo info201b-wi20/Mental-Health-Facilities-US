@@ -66,14 +66,6 @@ second_page <- tabPanel(
   )
 )
 
-# Select from a List of Options for Bar Chart
-choosing_color <- selectInput(
-  inputId = "color", label = "Color", choices = list("Red" = "red",
-  "Orange" = "orange", "Yellow" = "yellow", "Green" = "green",
-  "Blue" = "blue", "Purple" = "purple", "Black" = "black",
-  "Gray" = "gray", "Pink" = "magenta", "White" = "white")
-)
-
 #############################_2nd Graph_#######################################
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
