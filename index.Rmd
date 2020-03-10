@@ -11,6 +11,8 @@ source("scripts/second_chart.R")
 source("scripts/third_chart.R")
 source("scripts/table_of_summary.R")
 data <- read.csv("Data/mental_health_data.csv", stringsAsFactors = F)
+summary_data <-
+  read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
 ```
 
 # **The Importance of Mental Health**
@@ -46,7 +48,7 @@ Most helpful **insights** within this US Mental Health Summary Statistics Table:
 Mental health diagnostics is extremely important and useful for identifying which mental illness a patient could have. Although mental health diagnostics can also be provided in places that are not treatment facilities, it is very convenient if both the diagnosis and treatment can be provided in the same place -- knowing how many facilities in each state provide mental health diagnostics is very useful. Therefore, a **barchart** was found to be most appropriate in showing this visualization. 
 
 ```{r echo = FALSE}
-state_vs_diagnostics_barchart(data)
+state_vs_diagnostics_barchart(summary_data)
 ```
 
 Important Observations:
@@ -62,8 +64,6 @@ Important Observations:
 There are a lot of victims of mental illness that are also hearing impaired. Some of their mental health issues could have also stemmed from the fact that they are deaf/hard of hearing. This **scatterplot** allows clear representation of the amount of resources for individuals with hearing impairments across different states. So knowing how many institutions provide sign language in every state would be very helpful for people who need it to communicate.
 
 ```{r echo = FALSE}
-summary_data <-
-  read.csv("Data/mental_health_summary_table.csv", stringsAsFactors = F)
 sign_language_data(summary_data)
 ```
 
