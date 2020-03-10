@@ -93,7 +93,9 @@ third_page <- tabPanel(
 fourth_page <- tabPanel(
   "Heat Map: Amount of Reviews for Mental Health Facilities",
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      uiOutput("input_third_states")
+    ),
     mainPanel(
       h4("Responses from Mental Health Facilities Across the US"),
       plotlyOutput("third_chart")

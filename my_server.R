@@ -15,6 +15,14 @@ summary_data <-
 min_offer_eval <- min(summary_data$Offer_diagnostic_evaluations, na.rm = TRUE)
 max_offer_eval <- max(summary_data$Offer_diagnostic_evaluations, na.rm = TRUE)
 
+data_states <- lapply(
+  lapply(data %>%
+           select(LST) %>%
+           distinct() %>%
+           filter(LST %in% state.abb) %>%
+           pull(), abbr_to_state),
+  stringr::str_to_title)
+
 my_server <- function(input, output) {
   output$first_chart <- renderPlotly({
     values <- input$eval_slider_choice
@@ -33,8 +41,21 @@ my_server <- function(input, output) {
     sign_language_data(summary_data, input$point_size)
     
   })
+  
   output$third_chart <- renderPlotly({
-    render_third_chart(data)
+    render_third_chart(data %>%
+                         mutate(state_full = stringr::str_to_title(abbr_to_state(LST))) %>%
+                         filter(state_full %in% input$states_selected))
+  })
+  
+  output$input_third_states <- renderUI({
+    selectInput(
+      "states_selected",
+      "States to Show",
+      data_states,
+      selected = data_states,
+      multiple = T
+    )
   })
 }
 
