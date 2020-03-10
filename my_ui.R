@@ -10,7 +10,26 @@ first_page <- tabPanel(
   "Mental Health Matters: An Overview",
   fillPage(
     h4("An Overview"),
-    p("here is a paragraph...")
+    p("Mental health is a topic that is ever prevalent in our society,
+      and mental health issues/illness is a problem that is always growing,
+      even more so in our generation. Therefore treatment for mental health
+      problems is growing in demand as well. Because of this, people are
+      going to want the treatment that will suit them the best. But the
+      best care might not be in the state that they reside in, so this
+      project aims to answer a few major questions to give people a better
+      idea of where they might want to go to get the treatment they want:
+      <br>1. Which states have the most amount of options in terms of
+      facilities that operate there?
+      <br>2. Which states have facilities that provide services for disabled 
+      patients, such as sign language for the hard of hearing/deaf?
+      <br>3. How many facilities per state actually took time to give 
+      information about their facilities?
+      <br><br> In order to answer these questions, as well as to learn more
+      about mental health facilities in different states,we used the data set 
+      made from the National Mental Health Services Survey 2018
+      by the Substance Abuse & Mental Health Data Archive(SAMHDA).
+      From there we created a new dataset made from filtering 
+      the original dataset, and utilized that to compute our data.")
   ),
   # Makes Team Chocolate Logo :D
   HTML("
