@@ -54,7 +54,7 @@ first_page <- tabPanel(
 second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
-    sidebarPanel(
+    sidebarPanel(choosing_color,
       uiOutput(
         "input_first_chart_number"
       )
@@ -64,6 +64,14 @@ second_page <- tabPanel(
       plotlyOutput("first_chart")
     )
   )
+)
+
+# Select from a List of Options for Bar Chart
+choosing_color <- selectInput(
+  inputId = "color", label = "Color", choices = list("Red" = "red",
+  "Orange" = "orange", "Yellow" = "yellow", "Green" = "green",
+  "Blue" = "blue", "Purple" = "purple", "Black" = "black",
+  "Gray" = "gray", "Pink" = "magenta", "White" = "white")
 )
 
 #############################_2nd Graph_#######################################
@@ -84,14 +92,6 @@ third_page <- tabPanel(
 size_choice <- sliderInput(inputId = "point_size",
   label = "Scatterplot Point Size",
   min = 1, max = 12, value = 3
-)
-
-# Select from a List of Options for Bar Chart
-choosing_color <- selectInput(
-  inputID = "color", label = "Color", choices = list("Red" = "red",
-  "Orange" = "orange", "Yellow" = "yellow", "Green" = "green",
-  "Blue" = "blue", "Purple" = "purple", "Black" = "black",
-  "Gray" = "gray", "Pink" = "magenta", "White" = "white")
 )
 
 #############################_3rd Graph_#######################################

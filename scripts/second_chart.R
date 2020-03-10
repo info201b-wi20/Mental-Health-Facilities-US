@@ -22,9 +22,10 @@ library(plotly)
 # the main data set that we used.
 # This is all inside of the data folder
 
-sign_language_data <- function(df) {
+sign_language_data <- function(df, size = 3) {
   ggplotly(ggplot(data = df) +
-    geom_point(mapping = aes(x = State, y = Provides_sign_language)) +
+    geom_point(mapping = aes(x = State, y = Provides_sign_language),
+               size = size) +
 
     labs(
       title = "Amount of Institutions Per State That Provides Sign Language",
