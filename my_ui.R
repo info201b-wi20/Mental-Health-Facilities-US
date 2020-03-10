@@ -55,6 +55,7 @@ second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
     sidebarPanel(
+      # Sliding Input Widget for Diagnostics
       uiOutput(
         "input_first_chart_number"
       )
