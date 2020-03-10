@@ -8,10 +8,10 @@ library(plotly)
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
   "Mental Health Matters: An Overview",
-    mainPanel(
-      h4("An Overview"),
-      p("here is a paragraph...")
-    ),
+  fillPage(
+    h4("An Overview"),
+    p("here is a paragraph...")
+  ),
   # Makes Team Chocolate Logo :D
   HTML("
     <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
@@ -95,6 +95,7 @@ fourth_page <- tabPanel(
     ),
     mainPanel(
       h4("Responses from Mental Health Facilities Across the US"),
+      p("Note that this can take a few seconds to load."),
       plotlyOutput("third_chart")
     )
   )
