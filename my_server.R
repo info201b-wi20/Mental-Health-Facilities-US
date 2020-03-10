@@ -22,7 +22,7 @@ my_server <- function(input, output) {
                                     filter(Offer_diagnostic_evaluations >= values[1]) %>%
                                     filter(Offer_diagnostic_evaluations <= values[2])) 
   })
-  
+
   output$input_first_chart_number <- renderUI({
     sliderInput("eval_slider_choice", label = h3("Filtering Diagnostic Evaluations"), min = min_offer_eval, 
                 max = max_offer_eval, value = c(min_offer_eval, 
