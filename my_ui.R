@@ -3,7 +3,7 @@ library(ggplot2)
 library(shiny)
 library(plotly)
 
-#############################_Intro page_######################################
+############################# _Intro page_######################################
 # Pages for Shiny Application
 # First Page: Overview of our data set with important analysis questions
 first_page <- tabPanel(
@@ -26,15 +26,15 @@ first_page <- tabPanel(
       idea of where they might want to go to get the treatment they want:
       <br>1. Which states have the most amount of options in terms of
       facilities that operate there?
-      <br>2. Which states have facilities that provide services for disabled 
+      <br>2. Which states have facilities that provide services for disabled
       patients, such as sign language for the hard of hearing/deaf?
-      <br>3. How many facilities per state actually took time to give 
+      <br>3. How many facilities per state actually took time to give
       information about their facilities?
       <br><br> In order to answer these questions, as well as to learn more
-      about mental health facilities in different states,we used the data set 
+      about mental health facilities in different states,we used the data set
       made from the National Mental Health Services Survey 2018
       by the Substance Abuse & Mental Health Data Archive(SAMHDA).
-      From there we created a new dataset made from filtering 
+      From there we created a new dataset made from filtering
       the original dataset, and utilized that to compute our data.")
   ),
   # Makes Team Chocolate Logo :D
@@ -43,7 +43,7 @@ first_page <- tabPanel(
   ")
 )
 
-#############################_1st Graph_######################################
+############################# _1st Graph_######################################
 # Second Page: Barchart concerning States and Mental Health Diagnosis
 second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
@@ -61,14 +61,15 @@ second_page <- tabPanel(
   )
 )
 
-#############################_2nd Graph_#######################################
+############################# _2nd Graph_#######################################
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
 
 # Slider Input Widget for Scatterplot
-size_choice <- sliderInput(inputId = "point_size",
-                           label = "Scatterplot Point Size",
-                           min = 1, max = 12, value = 3
+size_choice <- sliderInput(
+  inputId = "point_size",
+  label = "Scatterplot Point Size",
+  min = 1, max = 12, value = 3
 )
 
 third_page <- tabPanel(
@@ -82,7 +83,7 @@ third_page <- tabPanel(
   )
 )
 
-#############################_3rd Graph_#######################################
+############################# _3rd Graph_#######################################
 # Fourth Page: Heat Map of Continental US that visualizes the number of
 # mental health facilities that responded in each state
 fourth_page <- tabPanel(
@@ -100,7 +101,7 @@ fourth_page <- tabPanel(
   )
 )
 
-#############################_Takeaway Page_###################################
+############################# _Takeaway Page_###################################
 # Fifth Page: Major Analysis Takeaways and Insights from the Charts
 # Let's do 1 insight per visualization
 fifth_page <- tabPanel(
@@ -114,16 +115,16 @@ fifth_page <- tabPanel(
   )
 )
 
-#############################_ui_#########################################
+############################# _ui_#########################################
 my_ui <- navbarPage(
   "Mental Health Facilities Across the US",
-  first_page, 
-  second_page, 
-  third_page, 
+  first_page,
+  second_page,
+  third_page,
   fourth_page,
   fifth_page,
   theme = shinythemes::shinytheme("cerulean"),
-  footer = HTML("   
+  footer = HTML("
     <style>
       .chocolate {
         animation: footer 10s infinite ease-out;
@@ -131,7 +132,7 @@ my_ui <- navbarPage(
         position: fixed;
         bottom: 16px;
       }
-      
+
       @keyframes footer {
         0%, 10%, 90%, 100% {
           margin-left: 8px;
