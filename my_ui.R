@@ -18,16 +18,18 @@ first_page <- tabPanel(
       best care might not be in the state that they reside in, so this
       project aims to answer a few major questions to give people a better
       idea of where they might want to go to get the treatment they want:
-      <br>1. Which states have the most amount of options in terms of
+      \n1. Which states have the most amount of options in terms of
       facilities that operate there?
-      <br>2. Which states have facilities that provide services for disabled 
+      \n2. Which states have facilities that provide services for disabled 
       patients, such as sign language for the hard of hearing/deaf?
-      <br>3. How many facilities per state actually took time to give 
+      \n3. How many facilities per state actually took time to give 
       information about their facilities?
-      <br><br> In order to answer these questions, as well as to learn more
+      \n\n In order to answer these questions, as well as to learn more
       about mental health facilities in different states,we used the data set 
       made from the National Mental Health Services Survey 2018
-      by the Substance Abuse & Mental Health Data Archive(SAMHDA).
+      by the Substance Abuse & Mental Health Data Archive(SAMHDA) the link 
+      for this is: https://datafiles.samhsa.gov/study-dataset/national-mental
+      -health-services-survey-2018-n-mhss-2018-ds0001-nid18767.
       From there we created a new dataset made from filtering 
       the original dataset, and utilized that to compute our data.")
   ),
@@ -101,7 +103,25 @@ fifth_page <- tabPanel(
   "Analysis and Key Takeaways",
   fillPage(
     h4("Insights We Gained from US Mental Health Facilities Dataset"),
-    p("Here is a paragraph..."),
+    p("Major Takeaways:
+    1. For all three of our charts, California and New York had the 
+      most amount of facilities that were related to the charts topic.
+      This has the broader implication that states that have a higher
+      population has more options in terms of facilities.
+      2. The states located in the outer regions of the United States
+      had higher numbers in comparison to the middle regions of the US.
+      This has the implication that people may be more open in terms of 
+      their mental health issues in states that have higher populations, 
+      which is typically the outer states. This in turn makes mental health
+      facilities be more concentrated in the outer states, rather than the 
+      inner states.
+      3. Almost all states have less than half the number of facilities 
+      compared to the states that have the highest number for each 
+      chart topic (California and New York). This ties in to the implication
+      that more facilities are located in places with higher populations. 
+      Another implication this may show is that California and New York may 
+      also be more open compared to the other states in terms of transparency 
+      in their practices."),
     HTML("
       <img src='https://go.aws/38xnkMQ' alt='chocolate bar' class='chocolate'>
     ")
