@@ -14,26 +14,7 @@ first_page <- tabPanel(
   ),
   # Makes Team Chocolate Logo :D
   HTML("
-    <img src='https://go.aws/38xnkMQ' alt='chocolate bar' id='chocolate'>
-    <style>
-      #chocolate {
-        animation: footer 10s infinite ease-out;
-        width: 100px;
-        position: fixed;
-        bottom: 16px;
-      }
-      
-      @keyframes footer {
-        0%, 10%, 90%, 100% {
-          margin-left: 8px;
-          transform: rotate(0deg) rotateY(0deg);
-        }
-        40%, 60% {
-          margin-left: calc(100% - 124px);
-          transform: rotate(720deg) rotateY(360deg);
-        }
-      }
-    </style>
+    <img src='https://go.aws/38xnkMQ' alt='chocolate bar' class='chocolate'>
   ")
 )
 
@@ -101,7 +82,10 @@ fifth_page <- tabPanel(
   "Analysis and Key Takeaways",
   fillPage(
     h4("Insights We Gained from US Mental Health Facilities Dataset"),
-    p("Here is a paragraph...")
+    p("Here is a paragraph..."),
+    HTML("
+      <img src='https://go.aws/38xnkMQ' alt='chocolate bar' class='chocolate'>
+    ")
   )
 )
 
@@ -113,5 +97,26 @@ my_ui <- navbarPage(
   third_page, 
   fourth_page,
   fifth_page,
-  theme = shinythemes::shinytheme("cerulean")
+  theme = shinythemes::shinytheme("cerulean"),
+  footer = HTML("   
+    <style>
+      .chocolate {
+        animation: footer 10s infinite ease-out;
+        width: 100px;
+        position: fixed;
+        bottom: 16px;
+      }
+      
+      @keyframes footer {
+        0%, 10%, 90%, 100% {
+          margin-left: 8px;
+          transform: rotate(0deg) rotateY(0deg);
+        }
+        40%, 60% {
+          margin-left: calc(100% - 124px);
+          transform: rotate(720deg) rotateY(360deg);
+        }
+      }
+    </style>
+  ")
 )
