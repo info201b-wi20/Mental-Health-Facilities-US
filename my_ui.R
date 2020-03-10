@@ -10,6 +10,12 @@ first_page <- tabPanel(
   "Mental Health Matters: An Overview",
   fillPage(
     h4("An Overview"),
+    HTML("<img src = 'https://bit.ly/38Fcy7l' id = 'healthpic'>
+         <style> #healthpic {
+          width: 300px;
+          float: left;
+         }
+         </style>"),
     p("Mental health is a topic that is ever prevalent in our society,
       and mental health issues/illness is a problem that is always growing,
       even more so in our generation. Therefore treatment for mental health

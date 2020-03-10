@@ -1,5 +1,7 @@
 # Domain of Interest: **Mental Health**
 
+Shiny App url: https://tsenga11.shinyapps.io/Mental_Health_Analysis_App/
+
 ## Why are you interested in this field/domain?
 Mental health is a huge topic that has consistently been overlooked despite how widespread the issue of mental health disorders is. There is also a lack of treatment and information for many mental health disorders in a multitude of countries. People across different cultures, languages, socioeconomic classes and ages but not enough individuals talk about it. Therefore, we wanted to address this stigmatized topic and analyze the data for any new insight into
 **mental health issues.**
