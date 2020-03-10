@@ -110,5 +110,6 @@ my_ui <- navbarPage(
   second_page, 
   third_page, 
   fourth_page,
-  fifth_page
+  fifth_page,
+  theme = shinythemes::shinytheme("cerulean")
 )
