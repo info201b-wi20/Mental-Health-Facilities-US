@@ -53,7 +53,11 @@ first_page <- tabPanel(
 second_page <- tabPanel(
   "Barchart: Mental Health Diagnosis Across America",
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      uiOutput(
+        "input_first_chart_number"
+      )
+    ),
     mainPanel(
       h4("US States and Mental Health Diagnostic Testing"),
       plotlyOutput("first_chart")
