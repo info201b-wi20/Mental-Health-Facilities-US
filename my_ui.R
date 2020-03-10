@@ -99,10 +99,10 @@ fourth_page <- tabPanel(
 # Let's do 1 insight per visualization
 fifth_page <- tabPanel(
   "Analysis and Key Takeaways",
-    mainPanel(
-      h4("Insights We Gained from US Mental Health Facilities Dataset"),
-      p("Here is a paragraph...")
-    )
+  fillPage(
+    h4("Insights We Gained from US Mental Health Facilities Dataset"),
+    p("Here is a paragraph...")
+  )
 )
 
 #############################_ui_#########################################

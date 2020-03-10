@@ -37,9 +37,7 @@ my_server <- function(input, output) {
     max = max_offer_eval, value = c(min_offer_eval, max_offer_eval))
   })
   output$second_chart <- renderPlotly({
-    print(input$point_size)
     sign_language_data(summary_data, input$point_size)
-    
   })
   
   output$third_chart <- renderPlotly({
