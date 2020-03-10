@@ -69,6 +69,13 @@ second_page <- tabPanel(
 #############################_2nd Graph_#######################################
 # Third Page: Scatterplot with information about the States and the
 # amount of mental health facilities that provide sign language
+
+# Slider Input Widget for Scatterplot
+size_choice <- sliderInput(inputId = "point_size",
+                           label = "Scatterplot Point Size",
+                           min = 1, max = 12, value = 3
+)
+
 third_page <- tabPanel(
   "Scatterplot: Sign Language Provided in Facilities",
   sidebarLayout(
@@ -78,12 +85,6 @@ third_page <- tabPanel(
       plotlyOutput("second_chart")
     )
   )
-)
-
-# Slider Input Widget for Scatterplot
-size_choice <- sliderInput(inputId = "point_size",
-  label = "Scatterplot Point Size",
-  min = 1, max = 12, value = 3
 )
 
 #############################_3rd Graph_#######################################
