@@ -40,10 +40,12 @@ first_page <- tabPanel(
       "In order to answer these questions, as well as to learn more
       about mental health facilities in different states,we used the data set
       made from the National Mental Health Services Survey 2018
-      by the Substance Abuse & Mental Health Data Archive(SAMHDA):
-      https://datafiles.samhsa.gov/study-dataset/national-mental
-      -health-services-survey-2018-n-mhss-2018-ds0001-nid18767.
-      From there we created a new dataset made from filtering
+      by the Substance Abuse & Mental Health Data Archive(SAMHDA):",
+      tags$a(
+      "https://datafiles.samhsa.gov/study-dataset/national-mental
+      -health-services-survey-2018-n-mhss-2018-ds0001-nid18767",
+      href = "https://bit.ly/38BLVjL"),
+      "From there we created a new dataset made from filtering
       the original dataset, and utilized that to compute our data.")
   ),
   # Makes Team Chocolate Logo :D
